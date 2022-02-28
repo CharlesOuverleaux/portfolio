@@ -15,11 +15,11 @@ const Home: NextPage = () => {
         <Header />
       </nav>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to my profile</h1>
+      <main>
+        <h1>Welcome to my profile</h1>
       </main>
 
-      <footer className={styles.footer}></footer>
+      <footer></footer>
     </div>
   );
 };
