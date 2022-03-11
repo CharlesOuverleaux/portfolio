@@ -1,24 +1,21 @@
-/* This example requires Tailwind CSS v2.0+ */
 import Image from "next/image";
-/* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Disclosure } from "@headlessui/react";
 import React, { FC } from "react";
+import clsx from "clsx";
 
-const navigation = [
-  { name: "Work", href: "#", current: true },
-  { name: "About", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
-];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
+interface NavigationProps {
+  navigationData: { name: string; href: string }[];
 }
+
+const navigationData: { name: string; href: string }[] = [
+  { name: "Work", href: "#" },
+  { name: "About", href: "#" },
+  { name: "Contact", href: "#" },
+];
 
 const NameInitials: FC = () => {
   return (
-    <div className="px-4 pt-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div className="flex flex-row w-full">
         <Image
           src="/C.svg"
@@ -42,7 +39,52 @@ const NameInitials: FC = () => {
           className="animate-introY3"
         />
       </div>
-      <div>Menu</div>
+    </div>
+  );
+};
+
+const NavigationBar: FC<NavigationProps> = ({ navigationData }) => {
+  return (
+    <div className="hidden sm:block sm:mr-6 animate-introX1">
+      <div className="flex space-x-4">
+        {navigationData.map((item) => (
+          <Disclosure.Button
+            key={item.name}
+            as="a"
+            href={item.href}
+            className={clsx(
+              "text-black",
+              "hover:text-gray-500",
+              "px-3 py-2 rounded-md text-2xl font-bold",
+              "uppercase"
+            )}
+          >
+            {item.name}
+          </Disclosure.Button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const NavigationBarMobile: FC<NavigationProps> = ({ navigationData }) => {
+  return (
+    <div className="px-2 pt-2 pb-3 space-y-1">
+      {navigationData.map((item) => (
+        <Disclosure.Button
+          key={item.name}
+          as="a"
+          href={item.href}
+          className={clsx(
+            "text-black hover:text-gray-500",
+            "block px-3 py-2 text-4xl font-bold",
+            "uppercase",
+            "last:border-b-[0.9px] border-gray-200"
+          )}
+        >
+          {item.name}
+        </Disclosure.Button>
+      ))}
     </div>
   );
 };
@@ -50,163 +92,52 @@ const NameInitials: FC = () => {
 export default function Header() {
   return (
     <>
-      <Disclosure as="nav" className="bg-gray-800">
+      <Disclosure as="nav">
         {({ open }) => (
           <>
-            <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-              <div className="relative flex items-center justify-between h-16">
-                <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                  {/* Mobile menu button*/}
-                  <Disclosure.Button className="inline-flex items-center justify-center text-gray-400 rounded-full hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white">
-                    <span className="sr-only">Open main menu</span>
-                    {open ? (
-                      <Image
-                        src="/CrossButton.svg"
-                        alt="CrossButton"
-                        width={24}
-                        height={24}
-                        className="duration-500 ease-in-out rotate-45"
-                      />
-                    ) : (
-                      <Image
-                        src="/CrossButton.svg"
-                        alt="CrossButton"
-                        width={24}
-                        height={24}
-                        className="duration-500 ease-in-out"
-                      />
-                    )}
-                  </Disclosure.Button>
+            <div className={clsx("px-2 mx-auto  max-w-7xl sm:px-6 lg:px-8")}>
+              <div className="relative flex items-center justify-between h-32">
+                {/* Initials*/}
+                <div>
+                  <NameInitials />
                 </div>
-                <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
-                  <div className="flex items-center flex-shrink-0">
-                    <img
-                      className="block w-auto h-8 lg:hidden"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                      alt="Workflow"
-                    />
-                    <img
-                      className="hidden w-auto h-8 lg:block"
-                      src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                      alt="Workflow"
-                    />
-                  </div>
-                  <div className="hidden sm:block sm:ml-6">
-                    <div className="flex space-x-4">
-                      {navigation.map((item) => (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className={classNames(
-                            item.current
-                              ? "bg-gray-900 text-white"
-                              : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                            "px-3 py-2 rounded-md text-sm font-medium"
-                          )}
-                          aria-current={item.current ? "page" : undefined}
-                        >
-                          {item.name}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                  <button
-                    type="button"
-                    className="p-1 text-gray-400 bg-gray-800 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                  >
-                    <span className="sr-only">View notifications</span>
-                    <BellIcon className="w-6 h-6" aria-hidden="true" />
-                  </button>
-
-                  {/* Profile dropdown */}
-                  <Menu as="div" className="relative ml-3">
-                    <div>
-                      <Menu.Button className="flex text-sm bg-gray-800 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                        <span className="sr-only">Open user menu</span>
-                        <img
-                          className="w-8 h-8 rounded-full"
-                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                          alt=""
+                <div className="flex mr-2 overflow-hidden">
+                  {/* Desktop navigation */}
+                  {open ? (
+                    <NavigationBar navigationData={navigationData} />
+                  ) : (
+                    <></>
+                  )}
+                  <div className="inset-y-0 flex items-center">
+                    {/* Mobile menu button*/}
+                    <Disclosure.Button className="inline-flex">
+                      <span className="sr-only">Open main menu</span>
+                      {open ? (
+                        <Image
+                          src="/CrossBlack.svg"
+                          alt="CrossBlack"
+                          width={26}
+                          height={26}
+                          className="duration-500 ease-in-out rotate-45 hover:rotate-[135deg]"
                         />
-                      </Menu.Button>
-                    </div>
-                    <Transition
-                      as={Fragment}
-                      enter="transition ease-out duration-100"
-                      enterFrom="transform opacity-0 scale-95"
-                      enterTo="transform opacity-100 scale-100"
-                      leave="transition ease-in duration-75"
-                      leaveFrom="transform opacity-100 scale-100"
-                      leaveTo="transform opacity-0 scale-95"
-                    >
-                      <Menu.Items className="absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                        <Menu.Item>
-                          {({ active }) => (
-                            <a
-                              href="#"
-                              className={classNames(
-                                active ? "bg-gray-100" : "",
-                                "block px-4 py-2 text-sm text-gray-700"
-                              )}
-                            >
-                              Your Profile
-                            </a>
-                          )}
-                        </Menu.Item>
-                        <Menu.Item>
-                          {({ active }) => (
-                            <a
-                              href="#"
-                              className={classNames(
-                                active ? "bg-gray-100" : "",
-                                "block px-4 py-2 text-sm text-gray-700"
-                              )}
-                            >
-                              Settings
-                            </a>
-                          )}
-                        </Menu.Item>
-                        <Menu.Item>
-                          {({ active }) => (
-                            <a
-                              href="#"
-                              className={classNames(
-                                active ? "bg-gray-100" : "",
-                                "block px-4 py-2 text-sm text-gray-700"
-                              )}
-                            >
-                              Sign out
-                            </a>
-                          )}
-                        </Menu.Item>
-                      </Menu.Items>
-                    </Transition>
-                  </Menu>
+                      ) : (
+                        <Image
+                          src="/CrossBlack.svg"
+                          alt="CrossBlack"
+                          width={26}
+                          height={26}
+                          className="duration-500 ease-in-out hover:rotate-90"
+                        />
+                      )}
+                    </Disclosure.Button>
+                  </div>
                 </div>
               </div>
             </div>
 
             <Disclosure.Panel className="sm:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1">
-                {navigation.map((item) => (
-                  <Disclosure.Button
-                    key={item.name}
-                    as="a"
-                    href={item.href}
-                    className={classNames(
-                      item.current
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "block px-3 py-2 rounded-md text-base font-medium"
-                    )}
-                    aria-current={item.current ? "page" : undefined}
-                  >
-                    {item.name}
-                  </Disclosure.Button>
-                ))}
-              </div>
+              {/* Mobile navigation */}
+              <NavigationBarMobile navigationData={navigationData} />
             </Disclosure.Panel>
           </>
         )}

@@ -7,15 +7,13 @@ module.exports = {
     extend: {
       animation: {
         introX1: "introX 0.5s ease-in-out",
-        introX2: "introX 0.75s ease-in-out",
-        introX3: "introX 1s ease-in-out",
         introY1: "introY 0.5s ease-in-out",
         introY2: "introY 0.75s ease-in-out",
         introY3: "introY 1s ease-in-out",
       },
       keyframes: {
         introX: {
-          "0%": { transform: "translate(-50px)" },
+          "0%": { transform: "translate(150px)" },
           "100%": { transform: "translate(0px)" },
         },
         introY: {
