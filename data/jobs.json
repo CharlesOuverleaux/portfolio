@@ -1,0 +1,50 @@
+[
+    {
+      "jobId": 1,
+      "company": "OneFootball",
+      "title": "Frontend Engineer",
+      "href": "#",
+      "imageSrc": "/OneFootballLogo.svg",
+      "imageAlt": "OneFootball Logo",
+    },
+    {
+      "jobId": 2,
+      "company": "SurfEasy - Le Wagon",
+      "title": "FullStack Engineer",
+      "href": "#",
+      "imageSrc": "/SurfEasyLogo.svg",
+      "imageAlt": "SurfEasy Logo",
+    },
+    {
+      "jobId": 3,
+      "company": "Rent a Techy - Le Wagon",
+      "title": "FullStack Engineer",
+      "href": "#",
+      "imageSrc": "/RentaTechyLogo.svg",
+      "imageAlt": "Rent a Techy Logo",
+    },
+    {
+      "jobId": 4,
+      "company": "Amazon",
+      "title": "Strategic Startup Manager",
+      "href": "#",
+      "imageSrc": "/AmazonLogo.svg",
+      "imageAlt": "Amazon Logo",
+    },
+    {
+      "jobId": 5,
+      "company": "nu3",
+      "title": "Head of CRM",
+      "href": "#",
+      "imageSrc": "/nu3Logo.svg",
+      "imageAlt": "nu3 Logo",
+    },
+    {
+      "jobId": 6,
+      "company": "Home24",
+      "title": "Int. Category Manager",
+      "href": "#",
+      "imageSrc": "/Home24Logo.svg",
+      "imageAlt": "Home24 Logo",
+    }
+  ]

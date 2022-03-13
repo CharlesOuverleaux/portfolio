@@ -4,7 +4,7 @@ import { Job } from "../lib/types";
 
 const jobs: Job[] = [
   {
-    id: 1,
+    jobId: 1,
     company: "OneFootball",
     title: "Frontend Engineer",
     href: "#",
@@ -12,7 +12,7 @@ const jobs: Job[] = [
     imageAlt: "OneFootball Logo",
   },
   {
-    id: 2,
+    jobId: 2,
     company: "SurfEasy - Le Wagon",
     title: "FullStack Engineer",
     href: "#",
@@ -20,7 +20,7 @@ const jobs: Job[] = [
     imageAlt: "SurfEasy Logo",
   },
   {
-    id: 3,
+    jobId: 3,
     company: "Rent a Techy - Le Wagon",
     title: "FullStack Engineer",
     href: "#",
@@ -28,7 +28,7 @@ const jobs: Job[] = [
     imageAlt: "Rent a Techy Logo",
   },
   {
-    id: 4,
+    jobId: 4,
     company: "Amazon",
     title: "Strategic Startup Manager",
     href: "#",
@@ -36,7 +36,7 @@ const jobs: Job[] = [
     imageAlt: "Amazon Logo",
   },
   {
-    id: 5,
+    jobId: 5,
     company: "nu3",
     title: "Head of CRM",
     href: "#",
@@ -44,7 +44,7 @@ const jobs: Job[] = [
     imageAlt: "nu3 Logo",
   },
   {
-    id: 6,
+    jobId: 6,
     company: "Home24",
     title: "Int. Category Manager",
     href: "#",
@@ -66,7 +66,7 @@ export const CardList: FC = () => {
 
         <div className="grid grid-cols-1 mt-6 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
           {jobs.map((job) => (
-            <Card key={job.id} job={job} />
+            <Card key={job.jobId} job={job} />
           ))}
         </div>
       </div>

@@ -3,7 +3,7 @@ export interface CardProps {
 }
 
 export type Job = {
-  id: number;
+  jobId: number;
   company: string;
   title: string;
   href: string;

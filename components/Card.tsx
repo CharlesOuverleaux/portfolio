@@ -31,7 +31,7 @@ const CardBack: FC<CardProps> = ({ job }) => {
 
 export const Card: FC<CardProps> = ({ job }) => {
   return (
-    <div className="container" key={job.id}>
+    <div className="container" key={job.jobId}>
       <Hover>
         <div className="relative shadow-2xl group card">
           <div className="group-hover:hidden">
