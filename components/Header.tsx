@@ -8,14 +8,14 @@ interface NavigationProps {
 }
 
 const navigationData: { name: string; href: string }[] = [
-  { name: "Work", href: "#" },
+  { name: "Work", href: "#work" },
   { name: "About", href: "#" },
   { name: "Contact", href: "#" },
 ];
 
 const NameInitials: FC = () => {
   return (
-    <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-7xl">
       <div className="flex flex-row w-full">
         <Image
           src="/C.svg"
@@ -89,13 +89,13 @@ const NavigationBarMobile: FC<NavigationProps> = ({ navigationData }) => {
   );
 };
 
-export default function Header() {
+export const Header: FC = () => {
   return (
     <>
       <Disclosure as="nav">
         {({ open }) => (
           <>
-            <div className={clsx("px-2 mx-auto  max-w-7xl sm:px-6 lg:px-8")}>
+            <div className={clsx("px-4 mx-auto  max-w-7xl sm:px-6 lg:px-8")}>
               <div className="relative flex items-center justify-between h-32">
                 {/* Initials*/}
                 <div>
@@ -144,4 +144,4 @@ export default function Header() {
       </Disclosure>
     </>
   );
-}
+};

@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Header from "../components/Header";
+import { CardList, Header } from "../components";
 
 const Home: NextPage = () => {
   return (
@@ -11,12 +10,9 @@ const Home: NextPage = () => {
         <meta name="description" content="Welcome to my profile page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav>
-        <Header />
-      </nav>
-
+      <Header />
       <main>
-        <h1>Welcome to my profile</h1>
+        <CardList />
       </main>
 
       <footer></footer>
