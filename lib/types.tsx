@@ -1,13 +1,12 @@
 export interface CardProps {
-  product: Product;
+  job: Job;
 }
 
-export type Product = {
+export type Job = {
   id: number;
-  name: string;
+  company: string;
+  title: string;
   href: string;
   imageSrc: string;
   imageAlt: string;
-  price: string;
-  color: string;
 };

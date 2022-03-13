@@ -1,66 +1,55 @@
 import { FC } from "react";
 import { Card } from "./Card";
+import { Job } from "../lib/types";
 
-const products = [
+const jobs: Job[] = [
   {
     id: 1,
-    name: "Basic Tee",
+    company: "OneFootball",
+    title: "Frontend Engineer",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: "$35",
-    color: "Black",
+    imageSrc: "/OneFootballLogo.svg",
+    imageAlt: "OneFootball Logo",
   },
   {
     id: 2,
-    name: "Basic Tee",
+    company: "SurfEasy - Le Wagon",
+    title: "FullStack Engineer",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: "$35",
-    color: "Black",
+    imageSrc: "/SurfEasyLogo.svg",
+    imageAlt: "SurfEasy Logo",
   },
   {
     id: 3,
-    name: "Basic Tee",
+    company: "Rent a Techy - Le Wagon",
+    title: "FullStack Engineer",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: "$35",
-    color: "Black",
+    imageSrc: "/RentaTechyLogo.svg",
+    imageAlt: "Rent a Techy Logo",
   },
   {
     id: 4,
-    name: "Basic Tee",
+    company: "Amazon",
+    title: "Strategic Startup Manager",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: "$35",
-    color: "Black",
+    imageSrc: "/AmazonLogo.svg",
+    imageAlt: "Amazon Logo",
   },
   {
     id: 5,
-    name: "Basic Tee",
+    company: "nu3",
+    title: "Head of CRM",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: "$35",
-    color: "Black",
+    imageSrc: "/nu3Logo.svg",
+    imageAlt: "nu3 Logo",
   },
   {
     id: 6,
-    name: "Basic Tee",
+    company: "Home24",
+    title: "Int. Category Manager",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: "$35",
-    color: "Black",
+    imageSrc: "/Home24Logo.svg",
+    imageAlt: "Home24 Logo",
   },
 ];
 
@@ -76,8 +65,8 @@ export const CardList: FC = () => {
         </h2>
 
         <div className="grid grid-cols-1 mt-6 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-          {products.map((product) => (
-            <Card key={product.id} product={product} />
+          {jobs.map((job) => (
+            <Card key={job.id} job={job} />
           ))}
         </div>
       </div>
