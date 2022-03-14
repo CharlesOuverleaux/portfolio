@@ -2,49 +2,85 @@
     {
       "jobId": 1,
       "company": "OneFootball",
-      "title": "Frontend Engineer",
+      "companyDescription":"With OneFootball, we're forging a new path in the Blockchain/NFT space. We've established a unique strategy to build an amazing product in partnership with the most prolific organizations in the NFT field. We are interested in making a long-term contribution and pushing the sports/NFT ecosystem to the next level.",
+      "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
+      "title": "Frontend Engineer NFT",
+      "jobDescription": ["Developing the NFT marketplace application frontend (MVP cycles)", "Setting the technical bar for frontend technologies",
+        "Supporting the technical design and implementation of the frontend of an innovative NFT marketplace application",
+        "Establishing the foundational elements for the frontend engineering team",
+        "Owning the decomposition of hard problems into attainable pieces of work", "Unit, integrtion and functional testing"
+        ],
       "href": "#",
       "imageSrc": "/OneFootballLogo.svg",
-      "imageAlt": "OneFootball Logo"
+      "imageAlt": "OneFootball Logo",
+      "jobImageSrc": "/OneFootBall.svg",
+      "jobImageAlt": "OneFootball Office Berlin",
+      "dates": "Feb. 2022 - Present"
     },
     {
       "jobId": 2,
       "company": "SurfEasy - Le Wagon",
+      "companyDescription":"OneFootball is a Germany-based football media company. The OneFootball app features live-scores, statistics and news from 200 leagues in 12 different languages covered by a newsroom located in Berlin.",
+      "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
       "title": "FullStack Engineer",
+      "jobDescription": ["Develop the frontend for our NFT marketplace application", "Setting the technical bar for frontend technologies",
+        "Support the technical design and implementation of the frontend of an innovative NFT marketplace application",
+        "Establish the foundational elements for the frontend engineering team",
+        "Own the decomposition of hard problems into attainable pieces of work"
+        ],
       "href": "#",
       "imageSrc": "/SurfEasyLogo.svg",
-      "imageAlt": "SurfEasy Logo"
+      "imageAlt": "SurfEasy Logo",
+      "jobImageSrc": "/OneFootBall.svg",
+      "jobImageAlt": "OneFootball Office Berlin",
+      "dates": "Feb. 2022 - Present"
     },
     {
       "jobId": 3,
       "company": "Rent a Techy - Le Wagon",
+      "companyDescription":"OneFootball is a Germany-based football media company. The OneFootball app features live-scores, statistics and news from 200 leagues in 12 different languages covered by a newsroom located in Berlin.",
       "title": "FullStack Engineer",
       "href": "#",
       "imageSrc": "/RentaTechyLogo.svg",
-      "imageAlt": "Rent a Techy Logo"
+      "imageAlt": "Rent a Techy Logo",
+      "jobImageSrc": "/OneFootBall.svg",
+      "jobImageAlt": "OneFootball Office Berlin",
+      "dates": "Feb. 2022 - Present"
     },
     {
       "jobId": 4,
       "company": "Amazon",
+      "companyDescription":"OneFootball is a Germany-based football media company. The OneFootball app features live-scores, statistics and news from 200 leagues in 12 different languages covered by a newsroom located in Berlin.",
       "title": "Strategic Startup Manager",
       "href": "#",
       "imageSrc": "/AmazonLogo.svg",
-      "imageAlt": "Amazon Logo"
+      "imageAlt": "Amazon Logo",
+      "jobImageSrc": "/OneFootBall.svg",
+      "jobImageAlt": "OneFootball Office Berlin",
+      "dates": "Feb. 2022 - Present"
     },
     {
       "jobId": 5,
       "company": "nu3",
+      "companyDescription":"OneFootball is a Germany-based football media company. The OneFootball app features live-scores, statistics and news from 200 leagues in 12 different languages covered by a newsroom located in Berlin.",
       "title": "Head of CRM",
       "href": "#",
       "imageSrc": "/nu3Logo.svg",
-      "imageAlt": "nu3 Logo"
+      "imageAlt": "nu3 Logo",
+      "jobImageSrc": "/OneFootBall.svg",
+      "jobImageAlt": "OneFootball Office Berlin",
+      "dates": "Feb. 2022 - Present"
     },
     {
       "jobId": 6,
       "company": "Home24",
+      "companyDescription":"OneFootball is a Germany-based football media company. The OneFootball app features live-scores, statistics and news from 200 leagues in 12 different languages covered by a newsroom located in Berlin.",
       "title": "Int. Category Manager",
       "href": "#",
       "imageSrc": "/Home24Logo.svg",
-      "imageAlt": "Home24 Logo"
+      "imageAlt": "Home24 Logo",
+      "jobImageSrc": "/OneFootBall.svg",
+      "jobImageAlt": "OneFootball Office Berlin",
+      "dates": "Feb. 2022 - Present"
     }
   ]

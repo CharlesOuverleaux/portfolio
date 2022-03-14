@@ -4,7 +4,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    listStyleType: {
+      square: "square",
+    },
     extend: {
+      boxShadow: {
+        "co-blue": "4px 4px 0 #183DF2",
+      },
       animation: {
         introX1: "introX 0.5s ease-in-out",
         introX2: "introXleft 0.5s ease-in-out",
