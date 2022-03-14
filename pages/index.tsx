@@ -1,8 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { CardList, Header } from "../components";
+import useApiData from "../hooks/use-api-data";
+import { Job } from "../lib/types";
 
 const Home: NextPage = () => {
+  const jobs = useApiData<Job[]>("api/jobs", []);
+  console.log(jobs);
+
   return (
     <div>
       <Head>
@@ -12,7 +17,7 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main>
-        <CardList />
+        <CardList jobs={jobs} />
       </main>
 
       <footer></footer>

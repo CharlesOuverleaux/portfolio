@@ -5,7 +5,7 @@
       "title": "Frontend Engineer",
       "href": "#",
       "imageSrc": "/OneFootballLogo.svg",
-      "imageAlt": "OneFootball Logo",
+      "imageAlt": "OneFootball Logo"
     },
     {
       "jobId": 2,
@@ -13,7 +13,7 @@
       "title": "FullStack Engineer",
       "href": "#",
       "imageSrc": "/SurfEasyLogo.svg",
-      "imageAlt": "SurfEasy Logo",
+      "imageAlt": "SurfEasy Logo"
     },
     {
       "jobId": 3,
@@ -21,7 +21,7 @@
       "title": "FullStack Engineer",
       "href": "#",
       "imageSrc": "/RentaTechyLogo.svg",
-      "imageAlt": "Rent a Techy Logo",
+      "imageAlt": "Rent a Techy Logo"
     },
     {
       "jobId": 4,
@@ -29,7 +29,7 @@
       "title": "Strategic Startup Manager",
       "href": "#",
       "imageSrc": "/AmazonLogo.svg",
-      "imageAlt": "Amazon Logo",
+      "imageAlt": "Amazon Logo"
     },
     {
       "jobId": 5,
@@ -37,7 +37,7 @@
       "title": "Head of CRM",
       "href": "#",
       "imageSrc": "/nu3Logo.svg",
-      "imageAlt": "nu3 Logo",
+      "imageAlt": "nu3 Logo"
     },
     {
       "jobId": 6,
@@ -45,6 +45,6 @@
       "title": "Int. Category Manager",
       "href": "#",
       "imageSrc": "/Home24Logo.svg",
-      "imageAlt": "Home24 Logo",
+      "imageAlt": "Home24 Logo"
     }
   ]

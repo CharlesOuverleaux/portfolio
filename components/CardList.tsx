@@ -2,58 +2,11 @@ import { FC } from "react";
 import { Card } from "./Card";
 import { Job } from "../lib/types";
 
-const jobs: Job[] = [
-  {
-    jobId: 1,
-    company: "OneFootball",
-    title: "Frontend Engineer",
-    href: "#",
-    imageSrc: "/OneFootballLogo.svg",
-    imageAlt: "OneFootball Logo",
-  },
-  {
-    jobId: 2,
-    company: "SurfEasy - Le Wagon",
-    title: "FullStack Engineer",
-    href: "#",
-    imageSrc: "/SurfEasyLogo.svg",
-    imageAlt: "SurfEasy Logo",
-  },
-  {
-    jobId: 3,
-    company: "Rent a Techy - Le Wagon",
-    title: "FullStack Engineer",
-    href: "#",
-    imageSrc: "/RentaTechyLogo.svg",
-    imageAlt: "Rent a Techy Logo",
-  },
-  {
-    jobId: 4,
-    company: "Amazon",
-    title: "Strategic Startup Manager",
-    href: "#",
-    imageSrc: "/AmazonLogo.svg",
-    imageAlt: "Amazon Logo",
-  },
-  {
-    jobId: 5,
-    company: "nu3",
-    title: "Head of CRM",
-    href: "#",
-    imageSrc: "/nu3Logo.svg",
-    imageAlt: "nu3 Logo",
-  },
-  {
-    jobId: 6,
-    company: "Home24",
-    title: "Int. Category Manager",
-    href: "#",
-    imageSrc: "/Home24Logo.svg",
-    imageAlt: "Home24 Logo",
-  },
-];
+interface CardListProps {
+  jobs: Job[];
+}
 
-export const CardList: FC = () => {
+export const CardList: FC<CardListProps> = ({ jobs }) => {
   return (
     <div className="bg-white">
       <div className="max-w-2xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
