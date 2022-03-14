@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { CardList, Header } from "../components";
+import { Page } from "../components/Page";
 import useApiData from "../hooks/use-api-data";
 import { Job } from "../lib/types";
 
@@ -15,12 +16,11 @@ const Home: NextPage = () => {
         <meta name="description" content="Welcome to my profile page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      <main>
-        <CardList jobs={jobs} />
-      </main>
-
-      <footer></footer>
+      <Page>
+        <main>
+          <CardList jobs={jobs} />
+        </main>
+      </Page>
     </div>
   );
 };
