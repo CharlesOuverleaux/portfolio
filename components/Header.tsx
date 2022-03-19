@@ -8,9 +8,9 @@ interface NavigationProps {
 }
 
 const navigationData: { name: string; href: string }[] = [
-  { name: "Work", href: "#work" },
-  { name: "About", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Work", href: "/#work" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ];
 
 const NameInitials: FC = () => {

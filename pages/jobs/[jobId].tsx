@@ -121,7 +121,8 @@ const JobPage: NextPage<Props> = ({ job }) => {
                 "bg-[#183DF2]",
                 "relative notched overflow-hidden",
                 "px-8 py-3 z-50 w-36",
-                "items-center text-center justify-self-start"
+                "items-center text-center justify-self-start",
+                "opacity-80 hover:opacity-100"
               )}
             >
               <span className="text-white uppercase">Previous</span>
@@ -132,7 +133,8 @@ const JobPage: NextPage<Props> = ({ job }) => {
                 "bg-[#183DF2]",
                 "relative notched overflow-hidden",
                 "px-8 py-3 z-50 w-36",
-                "items-center text-center justify-self-end"
+                "items-center text-center justify-self-end",
+                "opacity-80 hover:opacity-100"
               )}
             >
               <span className="text-white uppercase">Next</span>
