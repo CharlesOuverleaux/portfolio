@@ -7,26 +7,12 @@ import Image from "next/image";
 import { CameraIcon } from "@heroicons/react/solid";
 import useApiData from "../../hooks/use-api-data";
 import clsx from "clsx";
+import getPreviousJob from "../../helpers/getPreviousJob";
+import getNextJob from "../../helpers/getNextJob";
 
 interface Props {
   job: Job;
 }
-
-const getPreviousJob = (jobId: number, arrlength: number) => {
-  if (jobId === 1) {
-    return arrlength;
-  } else {
-    return jobId - 1;
-  }
-};
-
-const getNextJob = (jobId: number, arrlength: number) => {
-  if (jobId === arrlength) {
-    return 1;
-  } else {
-    return jobId + 1;
-  }
-};
 
 const JobPage: NextPage<Props> = ({ job }) => {
   const jobs = useApiData<Job[]>("/api/jobs", []);
