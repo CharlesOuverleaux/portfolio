@@ -125,32 +125,32 @@ const JobPage: NextPage<Props> = ({ job }) => {
                   ))}
                 </ul>
                 <p>LINK AERA.ONEFOOTBALL.IO</p>
-                <div className="grid grid-cols-2">
-                  <a
-                    href={"/jobs/" + previousJob}
-                    className={clsx(
-                      "bg-[#183DF2]",
-                      "relative notched overflow-hidden",
-                      "px-8 py-3 z-50 w-36",
-                      "items-center text-center justify-self-start"
-                    )}
-                  >
-                    <span className="text-white uppercase">Previous</span>
-                  </a>
-                  <a
-                    href={"/jobs/" + nextJob}
-                    className={clsx(
-                      "bg-[#183DF2]",
-                      "relative notched overflow-hidden",
-                      "px-8 py-3 z-50 w-36",
-                      "items-center text-center justify-self-end"
-                    )}
-                  >
-                    <span className="text-white uppercase">Next</span>
-                  </a>
-                </div>
               </div>
             </div>
+          </div>
+          <div className="grid grid-cols-2 mx-auto mt-4 max-w-prose lg:max-w-none">
+            <a
+              href={"/jobs/" + previousJob}
+              className={clsx(
+                "bg-[#183DF2]",
+                "relative notched overflow-hidden",
+                "px-8 py-3 z-50 w-36",
+                "items-center text-center justify-self-start"
+              )}
+            >
+              <span className="text-white uppercase">Previous</span>
+            </a>
+            <a
+              href={"/jobs/" + nextJob}
+              className={clsx(
+                "bg-[#183DF2]",
+                "relative notched overflow-hidden",
+                "px-8 py-3 z-50 w-36",
+                "items-center text-center justify-self-end"
+              )}
+            >
+              <span className="text-white uppercase">Next</span>
+            </a>
           </div>
         </div>
       </div>
