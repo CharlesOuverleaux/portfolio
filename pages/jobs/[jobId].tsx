@@ -5,12 +5,34 @@ import { ParsedUrlQuery } from "querystring";
 import { Page } from "../../components/Page";
 import Image from "next/image";
 import { CameraIcon } from "@heroicons/react/solid";
+import useApiData from "../../hooks/use-api-data";
+import clsx from "clsx";
 
 interface Props {
   job: Job;
 }
 
+const getPreviousJob = (jobId: number, arrlength: number) => {
+  if (jobId === 1) {
+    return arrlength;
+  } else {
+    return jobId - 1;
+  }
+};
+
+const getNextJob = (jobId: number, arrlength: number) => {
+  if (jobId === arrlength) {
+    return 1;
+  } else {
+    return jobId + 1;
+  }
+};
+
 const JobPage: NextPage<Props> = ({ job }) => {
+  const jobs = useApiData<Job[]>("/api/jobs", []);
+  const previousJob = getPreviousJob(job.jobId, jobs.length);
+  const nextJob = getNextJob(job.jobId, jobs.length);
+
   return (
     <Page>
       <div className="overflow-hidden bg-white">
@@ -103,7 +125,28 @@ const JobPage: NextPage<Props> = ({ job }) => {
                   ))}
                 </ul>
                 <p>LINK AERA.ONEFOOTBALL.IO</p>
-                <p>BUTTON PREVIOUS / NEXT</p>
+                <a
+                  href={"/jobs/" + previousJob}
+                  className={clsx(
+                    "bg-[#183DF2]",
+                    "relative notched overflow-hidden",
+                    "px-8 py-3 z-50",
+                    "items-center"
+                  )}
+                >
+                  <span className="text-white">Previous</span>
+                </a>
+                <a
+                  href={"/jobs/" + nextJob}
+                  className={clsx(
+                    "bg-[#183DF2]",
+                    "relative notched overflow-hidden",
+                    "px-8 py-3 z-50",
+                    "items-center"
+                  )}
+                >
+                  <span className="text-white">Next</span>
+                </a>
               </div>
             </div>
           </div>

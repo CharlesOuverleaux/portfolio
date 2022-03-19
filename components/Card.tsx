@@ -32,16 +32,18 @@ const CardBack: FC<CardProps> = ({ job }) => {
 export const Card: FC<CardProps> = ({ job }) => {
   return (
     <Hover>
-      <div className="container" key={job.jobId}>
-        <div className="shadow-2xl group card">
-          <div className="block group-hover:hidden">
-            <CardFront job={job} />
-          </div>
-          <div className="hidden group-hover:block">
-            <CardBack job={job} />
+      <a href={"jobs/" + job.jobId.toString()}>
+        <div className="container" key={job.jobId}>
+          <div className="shadow-2xl group card">
+            <div className="block group-hover:hidden">
+              <CardFront job={job} />
+            </div>
+            <div className="hidden group-hover:block">
+              <CardBack job={job} />
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </Hover>
   );
 };

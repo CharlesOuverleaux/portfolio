@@ -1,3 +1,48 @@
+/* Ref: https://stackoverflow.com/questions/60854215/tailwind-use-font-from-local-files-globally */
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
 @tailwind base;
+
+/**
+  * This injects Tailwind's component classes and any component classes
+  * registered by plugins.
+  */
 @tailwind components;
+
+/**
+  * This injects Tailwind's utility classes and any utility classes registered
+  * by plugins.
+  */
 @tailwind utilities;
+
+/**
+  * Use this directive to control where Tailwind injects the hover, focus,
+  * responsive, dark mode, and other variants of each class.
+  *
+  * If omitted, Tailwind will append these classes to the very end of
+  * your stylesheet by default.
+  */
+@tailwind variants;
+
+@layer components {
+  /* 
+     Ref: https://css-tricks.com/notched-boxes/ 
+     Ref: https://blog.logrocket.com/how-to-create-fancy-corners-in-css/
+   */
+  .notched {
+    --notchSize: 16px;
+
+    clip-path: polygon(
+      0% var(--notchSize),
+      /* top left */ var(--notchSize) 0%,
+      /* top left */ 100% 0%,
+      /* top right */ 100% 0%,
+      /* top right */ 100% calc(100% - var(--notchSize)),
+      /* bottom right */ calc(100% - var(--notchSize)) 100%,
+      /* bottom right */ 0% 100%,
+      /* bottom left */ 0% 100% /* bottom left */
+    );
+  }
+}
