@@ -16,8 +16,16 @@ interface Props {
 
 const JobPage: NextPage<Props> = ({ job }) => {
   const jobs = useApiData<Job[]>("/api/jobs", []);
-  const previousJob = getPreviousJob(job.jobId, jobs.length);
-  const nextJob = getNextJob(job.jobId, jobs.length);
+  const previousJobId = getPreviousJob(job.jobId, jobs.length);
+  const nextJobId = getNextJob(job.jobId, jobs.length);
+
+  const previousJob = jobs.filter((job) => {
+    return job.jobId == previousJobId;
+  });
+
+  const nextJob = jobs.filter((job) => {
+    return job.jobId == nextJobId;
+  });
 
   return (
     <Page>
@@ -116,19 +124,21 @@ const JobPage: NextPage<Props> = ({ job }) => {
           </div>
           <div className="grid grid-cols-2 mx-auto mt-4 max-w-prose lg:max-w-none">
             <a
-              href={"/jobs/" + previousJob}
+              href={"/jobs/" + previousJobId}
               className={clsx(
                 "bg-[#183DF2]",
                 "relative notched overflow-hidden",
                 "px-8 py-3 z-50 w-36",
-                "items-center text-center justify-self-start",
+                "items-center text-center justify-self-start truncate text-white",
                 "opacity-80 hover:opacity-100"
               )}
             >
-              <span className="text-white uppercase">Previous</span>
+              <span className="text-white uppercase truncate">
+                {previousJob[0] ? previousJob[0].company : "Previous"}
+              </span>
             </a>
             <a
-              href={"/jobs/" + nextJob}
+              href={"/jobs/" + nextJobId}
               className={clsx(
                 "bg-[#183DF2]",
                 "relative notched overflow-hidden",
@@ -137,7 +147,9 @@ const JobPage: NextPage<Props> = ({ job }) => {
                 "opacity-80 hover:opacity-100"
               )}
             >
-              <span className="text-white uppercase">Next</span>
+              <p className="text-white uppercase truncate">
+                {nextJob[0] ? nextJob[0].company : "Next"}
+              </p>
             </a>
           </div>
         </div>
