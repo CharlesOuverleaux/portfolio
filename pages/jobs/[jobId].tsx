@@ -9,6 +9,10 @@ import useApiData from "../../hooks/use-api-data";
 import clsx from "clsx";
 import getPreviousJob from "../../helpers/getPreviousJob";
 import getNextJob from "../../helpers/getNextJob";
+import { faYoutube, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconName } from "@fortawesome/free-brands-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
 
 interface Props {
   job: Job;
@@ -16,6 +20,7 @@ interface Props {
 
 const JobPage: NextPage<Props> = ({ job }) => {
   const jobs = useApiData<Job[]>("/api/jobs", []);
+  library.add(faYoutube, faGithub);
   const previousJobId = getPreviousJob(job.jobId, jobs.length);
   const nextJobId = getNextJob(job.jobId, jobs.length);
 
@@ -118,7 +123,22 @@ const JobPage: NextPage<Props> = ({ job }) => {
                     </li>
                   ))}
                 </ul>
-                <p>LINK AERA.ONEFOOTBALL.IO</p>
+                <div className="flex justify-around w-full ">
+                  <a key="GitHub" href="/" target="_blank" rel="noreferrer">
+                    <span className="sr-only">GitHub</span>
+                    <FontAwesomeIcon
+                      icon={["fab", "github" as IconName]}
+                      size={"2x"}
+                    />
+                  </a>
+                  <a key="Youtube" href="/" target="_blank" rel="noreferrer">
+                    <span className="sr-only">Youtube</span>
+                    <FontAwesomeIcon
+                      icon={["fab", "youtube" as IconName]}
+                      size={"2x"}
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
