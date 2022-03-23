@@ -6,14 +6,13 @@ import { Page } from "../../components/Page";
 import Image from "next/image";
 import { CameraIcon } from "@heroicons/react/solid";
 import useApiData from "../../hooks/use-api-data";
-import clsx from "clsx";
 import getPreviousJob from "../../helpers/getPreviousJob";
 import getNextJob from "../../helpers/getNextJob";
 import { faYoutube, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconName } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-
+import { JobButton } from "../../components/.";
 interface Props {
   job: Job;
 }
@@ -142,36 +141,12 @@ const JobPage: NextPage<Props> = ({ job }) => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 mx-auto mt-4 max-w-prose lg:max-w-none">
-            <a
-              href={"/jobs/" + previousJobId}
-              className={clsx(
-                "bg-[#183DF2]",
-                "relative notched overflow-hidden",
-                "px-8 py-3 z-50 w-36",
-                "items-center text-center justify-self-start truncate text-white",
-                "opacity-80 hover:opacity-100"
-              )}
-            >
-              <span className="text-white uppercase truncate">
-                {previousJob[0] ? previousJob[0].company : "Previous"}
-              </span>
-            </a>
-            <a
-              href={"/jobs/" + nextJobId}
-              className={clsx(
-                "bg-[#183DF2]",
-                "relative notched overflow-hidden",
-                "px-8 py-3 z-50 w-36",
-                "items-center text-center justify-self-end",
-                "opacity-80 hover:opacity-100"
-              )}
-            >
-              <p className="text-white uppercase truncate">
-                {nextJob[0] ? nextJob[0].company : "Next"}
-              </p>
-            </a>
-          </div>
+          <JobButton
+            previousJob={previousJob}
+            previousJobId={previousJobId}
+            nextJob={nextJob}
+            nextJobId={nextJobId}
+          />
         </div>
       </div>
     </Page>
