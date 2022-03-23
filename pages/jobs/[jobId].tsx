@@ -12,7 +12,7 @@ import { faYoutube, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconName } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { JobButton, SvgPattern } from "../../components/.";
+import { JobButton, SvgPattern, JobDetails } from "../../components/.";
 interface Props {
   job: Job;
 }
@@ -35,17 +35,7 @@ const JobPage: NextPage<Props> = ({ job }) => {
     <Page>
       <div className="overflow-hidden bg-white">
         <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="absolute top-0 bottom-0 hidden w-screen lg:block bg-gray-50 left-3/4" />
-          <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
-            <div>
-              <h2 className="text-base font-semibold tracking-wide text-[#183DF2] uppercase">
-                {job.company}
-              </h2>
-              <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-                {job.title}
-              </h3>
-            </div>
-          </div>
+          <JobDetails job={job} />
           <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
             <div className="relative lg:row-start-1 lg:col-start-2">
               <SvgPattern />
@@ -90,24 +80,24 @@ const JobPage: NextPage<Props> = ({ job }) => {
                     </li>
                   ))}
                 </ul>
-                <div className="flex justify-around w-full ">
-                  <a key="GitHub" href="/" target="_blank" rel="noreferrer">
-                    <span className="sr-only">GitHub</span>
-                    <FontAwesomeIcon
-                      icon={["fab", "github" as IconName]}
-                      size={"2x"}
-                    />
-                  </a>
-                  <a key="Youtube" href="/" target="_blank" rel="noreferrer">
-                    <span className="sr-only">Youtube</span>
-                    <FontAwesomeIcon
-                      icon={["fab", "youtube" as IconName]}
-                      size={"2x"}
-                    />
-                  </a>
-                </div>
               </div>
             </div>
+          </div>
+          <div className="flex justify-around w-full ">
+            <a key="GitHub" href="/" target="_blank" rel="noreferrer">
+              <span className="sr-only">GitHub</span>
+              <FontAwesomeIcon
+                icon={["fab", "github" as IconName]}
+                size={"2x"}
+              />
+            </a>
+            <a key="Youtube" href="/" target="_blank" rel="noreferrer">
+              <span className="sr-only">Youtube</span>
+              <FontAwesomeIcon
+                icon={["fab", "youtube" as IconName]}
+                size={"2x"}
+              />
+            </a>
           </div>
           <JobButton
             previousJob={previousJob}
