@@ -3,8 +3,7 @@ import { Job } from "../lib/types";
 import Image from "next/image";
 import { CameraIcon } from "@heroicons/react/solid";
 import { SvgPattern } from "./.";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconName } from "@fortawesome/free-brands-svg-icons";
+import { IconsBar } from "./IconsBar";
 
 interface JobDetailsProps {
   job: Job;
@@ -67,47 +66,7 @@ export const JobDetails: FC<JobDetailsProps> = ({ job }) => {
                 </li>
               ))}
             </ul>
-            <div className="flex justify-center w-full py-4">
-              <a
-                key="GitHub"
-                href="/"
-                target="_blank"
-                rel="noreferrer"
-                className="mx-5 text-gray-500 hover:text-black"
-              >
-                <span className="sr-only">GitHub</span>
-                <FontAwesomeIcon
-                  icon={["fab", "github" as IconName]}
-                  size={"2x"}
-                />
-              </a>
-              <a
-                key="GitHub"
-                href="/"
-                target="_blank"
-                rel="noreferrer"
-                className="mx-5 text-gray-500 hover:text-black"
-              >
-                <span className="sr-only">GitHub</span>
-                <FontAwesomeIcon
-                  icon={["fab", "github" as IconName]}
-                  size={"2x"}
-                />
-              </a>
-              <a
-                key="Youtube"
-                href="/"
-                target="_blank"
-                rel="noreferrer"
-                className="mx-5 text-gray-500 hover:text-black"
-              >
-                <span className="sr-only">Youtube</span>
-                <FontAwesomeIcon
-                  icon={["fab", "youtube" as IconName]}
-                  size={"2x"}
-                />
-              </a>
-            </div>
+            <IconsBar />
           </div>
         </div>
       </div>

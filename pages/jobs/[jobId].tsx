@@ -6,7 +6,11 @@ import { Page } from "../../components/Page";
 import useApiData from "../../hooks/use-api-data";
 import getPreviousJob from "../../helpers/getPreviousJob";
 import getNextJob from "../../helpers/getNextJob";
-import { faYoutube, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faYoutube,
+  faGithub,
+  faChrome,
+} from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { JobButton, JobDetails } from "../../components/.";
 interface Props {
@@ -15,7 +19,7 @@ interface Props {
 
 const JobPage: NextPage<Props> = ({ job }) => {
   const jobs = useApiData<Job[]>("/api/jobs", []);
-  library.add(faYoutube, faGithub);
+  library.add(faYoutube, faGithub, faChrome);
   const previousJobId = getPreviousJob(job.jobId, jobs.length);
   const nextJobId = getNextJob(job.jobId, jobs.length);
 
