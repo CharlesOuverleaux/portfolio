@@ -15,7 +15,12 @@
       "imageAlt": "OneFootball Logo",
       "jobImageSrc": "/OneFootBall.svg",
       "jobImageAlt": "Replace w. NFT marketplace img",
-      "dates": "Feb. 2022 - Present"
+      "dates": "Feb. 2022 - Present",
+      "featuredImages" : [
+        { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
+        { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
+        { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
+      ]
     },
     {
       "jobId": 2,
@@ -33,7 +38,12 @@
       "imageAlt": "SurfEasy Logo",
       "jobImageSrc": "/OneFootBall.svg",
       "jobImageAlt": "OneFootball Office Berlin",
-      "dates": "Feb. 2022 - Present"
+      "dates": "Feb. 2022 - Present",
+      "featuredImages" : [
+        { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
+        { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
+        { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
+      ]
     },
     {
       "jobId": 3,
@@ -51,7 +61,12 @@
       "imageAlt": "Rent a Techy Logo",
       "jobImageSrc": "/OneFootBall.svg",
       "jobImageAlt": "OneFootball Office Berlin",
-      "dates": "Feb. 2022 - Present"
+      "dates": "Feb. 2022 - Present",
+      "featuredImages" : [
+        { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
+        { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
+        { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
+      ]
     },
     {
       "jobId": 4,
@@ -69,7 +84,12 @@
       "imageAlt": "Amazon Logo",
       "jobImageSrc": "/OneFootBall.svg",
       "jobImageAlt": "OneFootball Office Berlin",
-      "dates": "Feb. 2022 - Present"
+      "dates": "Feb. 2022 - Present",
+      "featuredImages" : [
+        { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
+        { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
+        { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
+      ]
     },
     {
       "jobId": 5,
@@ -87,7 +107,12 @@
       "imageAlt": "nu3 Logo",
       "jobImageSrc": "/OneFootBall.svg",
       "jobImageAlt": "OneFootball Office Berlin",
-      "dates": "Feb. 2022 - Present"
+      "dates": "Feb. 2022 - Present",
+      "featuredImages" : [
+        { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
+        { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
+        { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
+      ]
     },
     {
       "jobId": 6,
@@ -105,6 +130,11 @@
       "imageAlt": "Home24 Logo",
       "jobImageSrc": "/OneFootBall.svg",
       "jobImageAlt": "OneFootball Office Berlin",
-      "dates": "Feb. 2022 - Present"
+      "dates": "Feb. 2022 - Present",
+      "featuredImages" : [
+        { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
+        { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
+        { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
+      ]
     }
   ]

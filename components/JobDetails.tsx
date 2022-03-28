@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { Job } from "../lib/types";
-import Image from "next/image";
 import { CameraIcon } from "@heroicons/react/solid";
 import { SvgPattern } from "./.";
 import { IconsBar } from "./IconsBar";
+import { Slider } from "./index";
 
 interface JobDetailsProps {
   job: Job;
@@ -27,14 +27,7 @@ export const JobDetails: FC<JobDetailsProps> = ({ job }) => {
           <SvgPattern />
           <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
             <figure>
-              <div className="relative overflow-hidden rounded-lg shadow-co-blue aspect-w-12 aspect-h-7">
-                <Image
-                  src={job.jobImageSrc}
-                  alt={job.jobImageAlt}
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
+              <Slider featuredImages={job.featuredImages} />
               <figcaption className="flex mt-3 text-sm text-gray-500">
                 <CameraIcon
                   className="flex-none w-5 h-5 text-gray-400"
