@@ -25,10 +25,10 @@
     {
       "jobId": 2,
       "company": "SurfEasy",
-      "companyDescription":"OneFootball is a Germany-based football media company. The OneFootball app features live-scores, statistics and news from 200 leagues in 12 different languages covered by a newsroom located in Berlin.",
-      "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
+      "companyDescription":"This is my final project form the Le Wagon coding bootcamp. What if there was a tinder for surfers and waves? SurfEasy is a mobile friendly app searching the best waves depending on a surfers location, level and live weather data. It was developed as a team of 4 in 2 weeks.",
+      "techStack": ["Ruby on rails", "JavaScript", "HTML", "SCSS", "PostgreSQL", "Heroku"],
       "title": "FullStack Engineer",
-      "jobDescription": ["Develop the frontend for our NFT marketplace application", "Setting the technical bar for frontend technologies",
+      "jobDescription": ["Designed in figma and user stories, implemented code backend and frontend, shipped to production prototype","Develop the frontend for our NFT marketplace application", "Setting the technical bar for frontend technologies",
         "Support the technical design and implementation of the frontend of an innovative NFT marketplace application",
         "Establish the foundational elements for the frontend engineering team",
         "Own the decomposition of hard problems into attainable pieces of work"
@@ -38,7 +38,7 @@
       "imageAlt": "SurfEasy Logo",
       "jobImageSrc": "/OneFootBall.svg",
       "jobImageAlt": "OneFootball Office Berlin",
-      "dates": "Feb. 2022 - Present",
+      "dates": "Jun. 2021",
       "featuredImages" : [
         { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
         { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
@@ -51,7 +51,7 @@
       "companyDescription":"OneFootball is a Germany-based football media company. The OneFootball app features live-scores, statistics and news from 200 leagues in 12 different languages covered by a newsroom located in Berlin.",
       "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
       "title": "FullStack Engineer",
-      "jobDescription": ["Developing the NFT marketplace application frontend (MVP cycles)", "Setting the technical bar for frontend technologies",
+      "jobDescription": ["Designed, implemented and shipped to production a clone of AirBnB", "Developing the NFT marketplace application frontend (MVP cycles)", "Setting the technical bar for frontend technologies",
         "Supporting the technical design and implementation of the frontend of an innovative NFT marketplace application",
         "Establishing the foundational elements for the frontend engineering team",
         "Owning the decomposition of hard problems into attainable pieces of work", "Unit, integrtion and functional testing"
@@ -74,17 +74,17 @@
       "companyDescription":"OneFootball is a Germany-based football media company. The OneFootball app features live-scores, statistics and news from 200 leagues in 12 different languages covered by a newsroom located in Berlin.",
       "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
       "title": "Strategic Startup Manager",
-      "jobDescription": ["Developing the NFT marketplace application frontend (MVP cycles)", "Setting the technical bar for frontend technologies",
-        "Supporting the technical design and implementation of the frontend of an innovative NFT marketplace application",
-        "Establishing the foundational elements for the frontend engineering team",
-        "Owning the decomposition of hard problems into attainable pieces of work", "Unit, integrtion and functional testing"
+      "jobDescription": ["Consulted Europe’s largest startups and emerging brands (>$20M), grow their businesses across 6 countries, generating a +200% YoY growth for a portfolio of +25 brands", "Co-ordinated a self-service online platform, scaling operations and education for > 500 brands, reducing operational queries by 50%",
+        "Set-up a tool evaluating brands achievements and team resource allocations for +200 brands",
+        "Owned advanced ETL/SQL queries for large data sets, delivering outputs for weekly and monthly business reviews",
+        "Acted as Amazon Data Champion, improving data accessibility for the EU business teams"
         ],
       "href": "#",
       "imageSrc": "/AmazonLogo.svg",
       "imageAlt": "Amazon Logo",
       "jobImageSrc": "/OneFootBall.svg",
       "jobImageAlt": "OneFootball Office Berlin",
-      "dates": "Feb. 2022 - Present",
+      "dates": "Nov. 2019 - Mar. 2021",
       "featuredImages" : [
         { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
         { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
