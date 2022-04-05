@@ -63,7 +63,7 @@
       "href": "#",
       "imageSrc": "/RentaTechyLogo.svg",
       "imageAlt": "Rent a Techy Logo",
-      "dates": "Feb. 2022 - Present",
+      "dates": "May 2021",
       "featuredImages" : [
         { "imageSrc": "/RentATechy1.png", "imageAlt": "Rent a Techy CTA" },
         { "imageSrc": "/RentATechy2.png", "imageAlt": "Rent a Techy offers" },
@@ -76,7 +76,7 @@
       "jobId": 4,
       "company": "Amazon",
       "companyDescription":"Discover big ideas from small brands. The Amazon Launchpad mission is to support entrepreneurs by providing resources, expertise and global support to help showcase and deliver innovative products like yours to millions of Amazon customers.",
-      "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
+      "techStack": ["none"],
       "title": "Strategic Startup Manager",
       "jobDescription": ["Consulted Europe’s largest startups and emerging brands (>$20M), grow their businesses across 6 countries, generating a +200% YoY growth for a portfolio of +25 brands", "Co-ordinated a self-service online platform, scaling operations and education for > 500 brands, reducing operational queries by 50%",
         "Set-up a tool evaluating brands achievements and team resource allocations for +200 brands",
@@ -88,11 +88,11 @@
       "imageAlt": "Amazon Logo",
       "dates": "Nov. 2019 - Mar. 2021",
       "featuredImages" : [
-        { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
-        { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
-        { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
+        { "imageSrc": "/Amazon3.png", "imageAlt": "Amazon Launchpad" },
+        { "imageSrc": "/Amazon1.png", "imageAlt": "Amazon Launchpad store" },
+        { "imageSrc": "/Amazon2.png", "imageAlt": "Amazon Launchpad categories" }
       ],
-      "links": {"siteLink": "/", "githubLink": "/", "youtubeLink": "/"},
+      "links": {"siteLink": "https://www.amazon.co.uk/gp/browse.html?node=7212961031&ref_=nav_em__launch_all_0_1_1_25", "youtubeLink": "https://www.youtube.com/watch?v=HwZq6VVCfTs&ab_channel=AmazonLaunchpad"},
       "isTechnicalJob": false
     },
     {

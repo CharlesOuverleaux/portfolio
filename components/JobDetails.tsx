@@ -38,7 +38,7 @@ export const JobDetails: FC<JobDetailsProps> = ({ job }) => {
             {job.isTechnicalJob && (
               <>
                 <h3>Tech Stack</h3>
-                <div className="grid grid-cols-2 p-0 sm:grid-cols-4 lg:grid-cols-5">
+                <div className="grid grid-cols-2 p-0 sm:grid-cols-3">
                   {job.techStack.map((tech) => (
                     <span key={tech} className="">
                       {tech}

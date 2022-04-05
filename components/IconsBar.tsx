@@ -25,17 +25,19 @@ export const IconsBar: FC<IconsBarProps> = ({ links }) => {
           <FontAwesomeIcon icon={["fab", "chrome" as IconName]} size={"2x"} />
         </a>
       </Link>
-      <Link href={links.githubLink}>
-        <a
-          key="GitHub"
-          target="_blank"
-          rel="noreferrer"
-          className="mx-5 text-gray-500 hover:text-black"
-        >
-          <span className="sr-only">GitHub</span>
-          <FontAwesomeIcon icon={["fab", "github" as IconName]} size={"2x"} />
-        </a>
-      </Link>
+      {links.githubLink && (
+        <Link href={links.githubLink}>
+          <a
+            key="GitHub"
+            target="_blank"
+            rel="noreferrer"
+            className="mx-5 text-gray-500 hover:text-black"
+          >
+            <span className="sr-only">GitHub</span>
+            <FontAwesomeIcon icon={["fab", "github" as IconName]} size={"2x"} />
+          </a>
+        </Link>
+      )}
       {links.youtubeLink && (
         <Link href={links.youtubeLink}>
           <a
