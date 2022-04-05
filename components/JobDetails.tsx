@@ -35,14 +35,18 @@ export const JobDetails: FC<JobDetailsProps> = ({ job }) => {
             <p className="text-gray-500 ">{job.companyDescription}</p>
           </div>
           <div className="mx-auto mt-5 prose text-gray-500 prose-indigo lg:max-w-none lg:row-start-1 lg:col-start-1">
-            <h3>Tech Stack</h3>
-            <ul className="p-0 list-none">
-              {job.techStack.map((tech) => (
-                <span key={tech} className="m-2 first:m-0">
-                  {tech}
-                </span>
-              ))}
-            </ul>
+            {job.isTechnicalJob && (
+              <>
+                <h3>Tech Stack</h3>
+                <div className="grid grid-cols-2 p-0 sm:grid-cols-4 lg:grid-cols-5">
+                  {job.techStack.map((tech) => (
+                    <span key={tech} className="">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </>
+            )}
             <h3>Work | {job.dates} </h3>
             <ul role="list" className="list-square">
               {job.jobDescription.map((item) => (

@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       boxShadow: {
         "co-blue": "4px 4px 0 #183DF2",
+        "co-light": "4px 4px 0 #F4F6FC",
       },
       animation: {
         introX1: "introX 0.5s ease-in-out",

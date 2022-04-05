@@ -15,4 +15,5 @@ export type Job = {
   dates: string;
   featuredImages: { imageSrc: string; imageAlt: string }[];
   links: { siteLink: string; githubLink: string; youtubeLink: string };
+  isTechnicalJob: boolean;
 };
