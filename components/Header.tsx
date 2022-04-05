@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import React, { FC } from "react";
 import clsx from "clsx";
+import Link from "next/link";
 
 interface NavigationProps {
   navigationData: { name: string; href: string }[];
@@ -16,29 +17,31 @@ const navigationData: { name: string; href: string }[] = [
 const NameInitials: FC = () => {
   return (
     <div className="mx-auto max-w-7xl">
-      <div className="flex flex-row w-full">
-        <Image
-          src="/C.svg"
-          alt="C"
-          width={45}
-          height={75}
-          className="animate-introY1"
-        />
-        <Image
-          src="/A.svg"
-          alt="A"
-          width={45}
-          height={75}
-          className="animate-introY2"
-        />
-        <Image
-          src="/O.svg"
-          alt="O"
-          width={45}
-          height={75}
-          className="animate-introY3"
-        />
-      </div>
+      <Link href="/" passHref>
+        <div className="flex flex-row w-full">
+          <Image
+            src="/C.svg"
+            alt="C"
+            width={45}
+            height={75}
+            className="animate-introY1"
+          />
+          <Image
+            src="/A.svg"
+            alt="A"
+            width={45}
+            height={75}
+            className="animate-introY2"
+          />
+          <Image
+            src="/O.svg"
+            alt="O"
+            width={45}
+            height={75}
+            className="animate-introY3"
+          />
+        </div>
+      </Link>
     </div>
   );
 };
