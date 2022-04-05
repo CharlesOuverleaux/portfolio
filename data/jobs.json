@@ -6,7 +6,7 @@
       "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
       "title": "Frontend Engineer NFT",
       "jobDescription": ["Developed an innovatie NFT marketplace application frontend (MVP cycles)",
-        "Built reusable components with carefully designed props based on Figma designs", 
+        "Built reusable components based on Figma designs", 
         "Developed unit, integration and functional tests e.g. Jest, Playwright",
         "Optimized for maximum speed and scalability e.g. Lighthouse, validator.w3",
         "Collaborated with internal and external stakeholders (product managers, UX/UI agencies and business stakeholders)"
@@ -14,8 +14,6 @@
       "href": "#",
       "imageSrc": "/OneFootballLogo.svg",
       "imageAlt": "OneFootball Logo",
-      "jobImageSrc": "/OneFootBall.svg",
-      "jobImageAlt": "Replace w. NFT marketplace img",
       "dates": "Feb. 2022 - Present",
       "featuredImages" : [
         { "imageSrc": "/Hero.png", "imageAlt": "aera.onefootball.com" },
@@ -27,52 +25,49 @@
     {
       "jobId": 2,
       "company": "SurfEasy",
-      "companyDescription":"This is my final project form the Le Wagon coding bootcamp. What if there was a tinder for surfers and waves? SurfEasy is a mobile friendly app searching the best waves depending on a surfers location, level and live weather data. It was developed as a team of 4 in 2 weeks.",
+      "companyDescription":"This is my final project form Le Wagon. What if there was a tinder for surfers and waves? SurfEasy is a mobile friendly app searching the best waves depending on a surfers location, level and live weather data. It was developed as a team of 4 in 2 weeks.",
       "techStack": ["Ruby on rails", "JavaScript", "HTML", "SCSS", "PostgreSQL", "Heroku"],
       "title": "FullStack Engineer",
       "jobDescription": ["Pitched and developed the idea from scratch to production", 
         "Created user stories based on defined customer profiles", 
-        "Designed different user paths and pages in figma with UX/UI designers", 
-        "Collaborated with 4 developers to implement the code backend and frontend",
-        "Developed a solution matching the user profile to live weather conditions",
+        "Designed user paths and pages in figma with UX/UI designers", 
+        "Collaborated with 4 developers to implement both backend and frontend",
+        "Developed a solution matching the user profile to live weather conditions (API)",
         "Shipped the prototype to production"
         ],
       "href": "#",
       "imageSrc": "/SurfEasyLogo.svg",
       "imageAlt": "SurfEasy Logo",
-      "jobImageSrc": "/OneFootBall.svg",
-      "jobImageAlt": "OneFootball Office Berlin",
       "dates": "Jun. 2021",
       "featuredImages" : [
-        { "imageSrc": "/test2.png", "imageAlt": "SurfEasy Homepage" },
-        { "imageSrc": "/MobileSurfEasy.png", "imageAlt": "Slide2" },
-        { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
+        { "imageSrc": "/SurfEasyMobile.png", "imageAlt": "SurfEasy Mobile Flow" },
+        { "imageSrc": "/SurfEasyMobile2.png", "imageAlt": "SurfEasy Mobile Flow" },
+        { "imageSrc": "/SurfEasyMobile3.png", "imageAlt": "SurfEasy motto" }
       ],
       "links": {"siteLink": "https://www.surf-easy.com/", "githubLink": "https://github.com/CharlesOuverleaux/surfeasy", "youtubeLink": "https://www.youtube.com/watch?v=snYk8xveH5g&t=718s&ab_channel=LeWagon"}
     },
     {
       "jobId": 3,
       "company": "Rent a Techy",
-      "companyDescription":"OneFootball is a Germany-based football media company. The OneFootball app features live-scores, statistics and news from 200 leagues in 12 different languages covered by a newsroom located in Berlin.",
-      "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
+      "companyDescription":"This is my first project form Le Wagon. Are you stuck with your code? Rent a techy gets you technical support immediately from skilled and trustworthy people. This app is connecting developers and experts with people in need of support. Users can filters all developers that are available based on their skills, then book a session and leave a review of the support. It was developed as a team of 4 in 1 week.",
+      "techStack": ["Ruby on rails", "JavaScript", "HTML", "SCSS", "PostgreSQL", "Heroku"],
       "title": "FullStack Engineer",
-      "jobDescription": ["Designed, implemented and shipped to production a clone of AirBnB", "Developing the NFT marketplace application frontend (MVP cycles)", "Setting the technical bar for frontend technologies",
-        "Supporting the technical design and implementation of the frontend of an innovative NFT marketplace application",
-        "Establishing the foundational elements for the frontend engineering team",
-        "Owning the decomposition of hard problems into attainable pieces of work", "Unit, integrtion and functional testing"
+      "jobDescription": [ "Based the prototype on a Airbnb MVP model",
+        "Designed user paths and pages in figma", 
+        "Collaborated with 4 developers to implement both backend and frontend",
+        "Developed a booking system for users (host/guest model)",
+        "Shipped the prototype to production"
         ],
       "href": "#",
       "imageSrc": "/RentaTechyLogo.svg",
       "imageAlt": "Rent a Techy Logo",
-      "jobImageSrc": "/OneFootBall.svg",
-      "jobImageAlt": "OneFootball Office Berlin",
       "dates": "Feb. 2022 - Present",
       "featuredImages" : [
-        { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
-        { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
-        { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
+        { "imageSrc": "/RentATechy1.png", "imageAlt": "Rent a Techy CTA" },
+        { "imageSrc": "/RentATechy2.png", "imageAlt": "Rent a Techy offers" },
+        { "imageSrc": "/RentATechy3.png", "imageAlt": "Rent a Techy booking system" }
       ],
-      "links": {"siteLink": "/", "githubLink": "/", "youtubeLink": "/"}
+      "links": {"siteLink": "https://rent-a-techy-charlesouverleaux.herokuapp.com/", "githubLink": "https://github.com/CharlesOuverleaux/rent-a-techy"}
     },
     {
       "jobId": 4,
@@ -88,8 +83,6 @@
       "href": "#",
       "imageSrc": "/AmazonLogo.svg",
       "imageAlt": "Amazon Logo",
-      "jobImageSrc": "/OneFootBall.svg",
-      "jobImageAlt": "OneFootball Office Berlin",
       "dates": "Nov. 2019 - Mar. 2021",
       "featuredImages" : [
         { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
@@ -112,8 +105,6 @@
       "href": "#",
       "imageSrc": "/nu3Logo.svg",
       "imageAlt": "nu3 Logo",
-      "jobImageSrc": "/OneFootBall.svg",
-      "jobImageAlt": "OneFootball Office Berlin",
       "dates": "Feb. 2022 - Present",
       "featuredImages" : [
         { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
@@ -136,8 +127,6 @@
       "href": "#",
       "imageSrc": "/Home24Logo.svg",
       "imageAlt": "Home24 Logo",
-      "jobImageSrc": "/OneFootBall.svg",
-      "jobImageAlt": "OneFootball Office Berlin",
       "dates": "Feb. 2022 - Present",
       "featuredImages" : [
         { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },

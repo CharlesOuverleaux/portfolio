@@ -12,8 +12,6 @@ export type Job = {
   href: string;
   imageSrc: string;
   imageAlt: string;
-  jobImageSrc: string;
-  jobImageAlt: string;
   dates: string;
   featuredImages: { imageSrc: string; imageAlt: string }[];
   links: { siteLink: string; githubLink: string; youtubeLink: string };
