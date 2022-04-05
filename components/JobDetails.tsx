@@ -59,7 +59,7 @@ export const JobDetails: FC<JobDetailsProps> = ({ job }) => {
                 </li>
               ))}
             </ul>
-            <IconsBar />
+            <IconsBar links={job.links} />
           </div>
         </div>
       </div>

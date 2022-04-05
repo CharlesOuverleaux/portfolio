@@ -20,7 +20,8 @@
         { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
         { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
         { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
-      ]
+      ],
+      "links": {"siteLink": "/", "githubLink": "/"}
     },
     {
       "jobId": 2,
@@ -43,7 +44,8 @@
         { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
         { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
         { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
-      ]
+      ],
+      "links": {"siteLink": "/", "githubLink": "/", "youtubeLink": "/"}
     },
     {
       "jobId": 3,
@@ -66,7 +68,8 @@
         { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
         { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
         { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
-      ]
+      ],
+      "links": {"siteLink": "/", "githubLink": "/", "youtubeLink": "/"}
     },
     {
       "jobId": 4,
@@ -89,7 +92,8 @@
         { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
         { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
         { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
-      ]
+      ],
+      "links": {"siteLink": "/", "githubLink": "/", "youtubeLink": "/"}
     },
     {
       "jobId": 5,
@@ -112,7 +116,8 @@
         { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
         { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
         { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
-      ]
+      ],
+      "links": {"siteLink": "/", "githubLink": "/", "youtubeLink": "/"}
     },
     {
       "jobId": 6,
@@ -135,6 +140,7 @@
         { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
         { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
         { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
-      ]
+      ],
+      "links": {"siteLink": "/", "githubLink": "/", "youtubeLink": "/"}
     }
   ]
