@@ -5,10 +5,11 @@
       "companyDescription":"With OneFootball, we're forging a new path in the Blockchain/NFT space. We've established a unique strategy to build an amazing product in partnership with the most prolific organizations in the NFT field. We are interested in making a long-term contribution and pushing the sports/NFT ecosystem to the next level.",
       "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
       "title": "Frontend Engineer NFT",
-      "jobDescription": ["Developing the NFT marketplace application frontend (MVP cycles)", "Setting the technical bar for frontend technologies",
-        "Supporting the technical design and implementation of the frontend of an innovative NFT marketplace application",
-        "Establishing the foundational elements for the frontend engineering team",
-        "Owning the decomposition of hard problems into attainable pieces of work", "Unit, integrtion and functional testing"
+      "jobDescription": ["Developed an innovatie NFT marketplace application frontend (MVP cycles)",
+        "Built reusable components with carefully designed props based on Figma designs", 
+        "Developed unit, integration and functional tests e.g. Jest, Playwright",
+        "Optimized for maximum speed and scalability e.g. Lighthouse, validator.w3",
+        "Collaborated with internal and external stakeholders (product managers, UX/UI agencies and business stakeholders)"
         ],
       "href": "#",
       "imageSrc": "/OneFootballLogo.svg",
@@ -17,11 +18,11 @@
       "jobImageAlt": "Replace w. NFT marketplace img",
       "dates": "Feb. 2022 - Present",
       "featuredImages" : [
-        { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
-        { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
-        { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
+        { "imageSrc": "/Hero.png", "imageAlt": "aera.onefootball.com" },
+        { "imageSrc": "/Players.png", "imageAlt": "Aera players" },
+        { "imageSrc": "/OneFootball.svg", "imageAlt": "OneFootball Labs Office" }
       ],
-      "links": {"siteLink": "/", "githubLink": "/"}
+      "links": {"siteLink": "https://aera.onefootball.com/", "githubLink": "https://github.com/motain/aera"}
     },
     {
       "jobId": 2,
@@ -29,10 +30,12 @@
       "companyDescription":"This is my final project form the Le Wagon coding bootcamp. What if there was a tinder for surfers and waves? SurfEasy is a mobile friendly app searching the best waves depending on a surfers location, level and live weather data. It was developed as a team of 4 in 2 weeks.",
       "techStack": ["Ruby on rails", "JavaScript", "HTML", "SCSS", "PostgreSQL", "Heroku"],
       "title": "FullStack Engineer",
-      "jobDescription": ["Designed in figma and user stories, implemented code backend and frontend, shipped to production prototype","Develop the frontend for our NFT marketplace application", "Setting the technical bar for frontend technologies",
-        "Support the technical design and implementation of the frontend of an innovative NFT marketplace application",
-        "Establish the foundational elements for the frontend engineering team",
-        "Own the decomposition of hard problems into attainable pieces of work"
+      "jobDescription": ["Pitched and developed the idea from scratch to production", 
+        "Created user stories based on defined customer profiles", 
+        "Designed different user paths and pages in figma with UX/UI designers", 
+        "Collaborated with 4 developers to implement the code backend and frontend",
+        "Developed a solution matching the user profile to live weather conditions",
+        "Shipped the prototype to production"
         ],
       "href": "#",
       "imageSrc": "/SurfEasyLogo.svg",
@@ -41,11 +44,11 @@
       "jobImageAlt": "OneFootball Office Berlin",
       "dates": "Jun. 2021",
       "featuredImages" : [
-        { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
-        { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
+        { "imageSrc": "/test2.png", "imageAlt": "SurfEasy Homepage" },
+        { "imageSrc": "/MobileSurfEasy.png", "imageAlt": "Slide2" },
         { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
       ],
-      "links": {"siteLink": "/", "githubLink": "/", "youtubeLink": "/"}
+      "links": {"siteLink": "https://www.surf-easy.com/", "githubLink": "https://github.com/CharlesOuverleaux/surfeasy", "youtubeLink": "https://www.youtube.com/watch?v=snYk8xveH5g&t=718s&ab_channel=LeWagon"}
     },
     {
       "jobId": 3,

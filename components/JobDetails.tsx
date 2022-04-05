@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { Job } from "../lib/types";
-import { CameraIcon } from "@heroicons/react/solid";
 import { SvgPattern } from "./.";
 import { IconsBar } from "./IconsBar";
 import { Slider } from "./index";
@@ -28,13 +27,6 @@ export const JobDetails: FC<JobDetailsProps> = ({ job }) => {
           <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
             <figure>
               <Slider featuredImages={job.featuredImages} />
-              <figcaption className="flex mt-3 text-sm text-gray-500">
-                <CameraIcon
-                  className="flex-none w-5 h-5 text-gray-400"
-                  aria-hidden="true"
-                />
-                <span className="ml-2">{job.jobImageAlt}</span>
-              </figcaption>
             </figure>
           </div>
         </div>
