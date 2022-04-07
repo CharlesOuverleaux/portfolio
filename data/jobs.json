@@ -6,7 +6,7 @@
       "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
       "title": "Frontend Engineer NFT",
       "jobDescription": ["Developed an innovatie NFT marketplace application frontend (MVP cycles)",
-        "Built reusable components based on Figma designs", 
+        "Built reusable UI components based on Figma designs", 
         "Developed unit, integration and functional tests e.g. Jest, Playwright",
         "Optimized for maximum speed and scalability e.g. Lighthouse, validator.w3",
         "Collaborated with internal and external stakeholders (product managers, UX/UI agencies and business stakeholders)"
@@ -31,7 +31,7 @@
       "title": "FullStack Engineer",
       "jobDescription": ["Pitched and developed the idea from scratch to production", 
         "Created user stories based on defined customer profiles", 
-        "Designed user paths and pages in figma with UX/UI designers", 
+        "Designed user paths and pages in figma with UI/UX designers", 
         "Collaborated with 4 developers to implement both backend and frontend",
         "Developed a solution matching the user profile to live weather conditions (API)",
         "Shipped the prototype to production"
@@ -98,18 +98,20 @@
     {
       "jobId": 5,
       "company": "nu3",
-      "companyDescription":"OneFootball is a Germany-based football media company. The OneFootball app features live-scores, statistics and news from 200 leagues in 12 different languages covered by a newsroom located in Berlin.",
-      "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
+      "companyDescription":"Nu3 develops innovative products of the highest quality for health-conscious people. The portfolio comprises four product lines: Natural Food, Fitness, Weight Loss and Health. With these smart nutrition products, nu3 is helping you lead a healthier and fitter life. They are easy to integrate into your daily routine, provide you with nutrients and support you in a healthy lifestyle.",
+      "techStack": ["none"],
       "title": "Head of CRM",
-      "jobDescription": ["Developing the NFT marketplace application frontend (MVP cycles)", "Setting the technical bar for frontend technologies",
-        "Supporting the technical design and implementation of the frontend of an innovative NFT marketplace application",
-        "Establishing the foundational elements for the frontend engineering team",
-        "Owning the decomposition of hard problems into attainable pieces of work", "Unit, integrtion and functional testing"
+      "jobDescription": ["Head of CRM: Optimised retention developing global strategies, customer journeys and campaigns across 6 markets",
+        "Head of CRM: Implemented automated processes reducing manual efforts (-8H/week) and increasing content quality (no errors",
+        "Head of CRM: Led a team of Senior and Junior CRM managers", 
+        "Head of CRM: Develop and maintain the marketing dashboard which hosted and managed all marketing optimization processes (Python, Django)",
+        "Category Manager: Led the change of portfolio strategy from marketplace to an own brand shop, resulting in a +35% increase in profitability ",
+        "Category Manager: Acted as key stakeholder between purchasers, pricing analysts, content managers and marketing managers"
         ],
       "href": "#",
       "imageSrc": "/nu3Logo.svg",
       "imageAlt": "nu3 Logo",
-      "dates": "Feb. 2022 - Present",
+      "dates": "May 2016 - Oct. 2019",
       "featuredImages" : [
         { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
         { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
@@ -121,13 +123,10 @@
     {
       "jobId": 6,
       "company": "Home24",
-      "companyDescription":"OneFootball is a Germany-based football media company. The OneFootball app features live-scores, statistics and news from 200 leagues in 12 different languages covered by a newsroom located in Berlin.",
-      "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
+      "companyDescription":"#1 Pure-Play Home & Living e-commerce platform in continental Europe and Brazil. The home24 platform is available in seven European markets: Germany, France, Austria, the Netherlands, Switzerland, Belgium, and Italy – and in Brazil.",
+      "techStack": ["none"],
       "title": "Int. Category Manager",
-      "jobDescription": ["Developing the NFT marketplace application frontend (MVP cycles)", "Setting the technical bar for frontend technologies",
-        "Supporting the technical design and implementation of the frontend of an innovative NFT marketplace application",
-        "Establishing the foundational elements for the frontend engineering team",
-        "Owning the decomposition of hard problems into attainable pieces of work", "Unit, integrtion and functional testing"
+      "jobDescription": ["Launched and developed the sales of the international shops increasing the international revenue share from <1% to +15%"
         ],
       "href": "#",
       "imageSrc": "/Home24Logo.svg",
@@ -138,7 +137,7 @@
         { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
         { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
       ],
-      "links": {"siteLink": "/", "githubLink": "/", "youtubeLink": "/"},
+      "links": {"siteLink": "https://www.home24.com/websites/homevierundzwanzig/English/1/homepage.html"},
       "isTechnicalJob": false
     }
   ]
