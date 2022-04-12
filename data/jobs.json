@@ -132,8 +132,8 @@
       "dates": "Feb. 2022 - Present",
       "featuredImages" : [
         { "imageSrc": "/Home24-1.png", "imageAlt": "Home24 Website" },
-        { "imageSrc": "/Home24-2.jpeg", "imageAlt": "Home24 Showroom" },
-        { "imageSrc": "/Home24-3.jpeg", "imageAlt": "Home24 Furniture" }
+        { "imageSrc": "/Home24-2.png", "imageAlt": "Home24 Showroom" },
+        { "imageSrc": "/Home24-3.png", "imageAlt": "Home24 Shop the look"}
       ],
       "links": {"siteLink": "https://www.home24.com/websites/homevierundzwanzig/English/1/homepage.html"},
       "isTechnicalJob": false
