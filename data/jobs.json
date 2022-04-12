@@ -97,21 +97,15 @@
       "companyDescription":"Nu3 develops innovative products of the highest quality for health-conscious people. The portfolio comprises four product lines: Natural Food, Fitness, Weight Loss and Health. With these smart nutrition products, nu3 is helping you lead a healthier and fitter life. They are easy to integrate into your daily routine, provide you with nutrients and support you in a healthy lifestyle.",
       "techStack": ["none"],
       "title": "Head of CRM",
-      "jobDescription": ["Head of CRM: Optimised retention developing global strategies, customer journeys and campaigns across 6 markets",
-        "Head of CRM: Implemented automated processes reducing manual efforts (-8H/week) and increasing content quality (no errors",
-        "Head of CRM: Led a team of Senior and Junior CRM managers", 
-        "Head of CRM: Develop and maintain the marketing dashboard which hosted and managed all marketing optimization processes (Python, Django)",
-        "Category Manager: Led the change of portfolio strategy from marketplace to an own brand shop, resulting in a +35% increase in profitability ",
-        "Category Manager: Acted as key stakeholder between purchasers, pricing analysts, content managers and marketing managers"
-        ],
-      "longJobDescription":[
+      "jobDescription": [],
+      "multipleJobs":[
         {"title": "Head of CRM",
-          "description": ["Optimised retention developing global strategies, customer journeys and campaigns across 6 markets",
+          "descriptions": ["Optimised retention developing global strategies, customer journeys and campaigns across 6 markets",
           "Implemented automated processes reducing manual efforts (-8H/week) and increasing content quality",
           "Led a team of Senior and Junior CRM managers", 
           "Develop and maintain the marketing dashboard which hosted and managed all marketing optimization processes (Python, Django)"]},
         {"title": "Category Manager",
-          "description": ["Led the change of portfolio strategy from marketplace to an own brand shop, resulting in a +35% increase in profitability ",
+          "descriptions": ["Led the change of portfolio strategy from marketplace to an own brand shop, resulting in a +35% increase in profitability ",
           "Acted as key stakeholder between purchasers, pricing analysts, content managers and marketing managers"]}
       ],
       "imageSrc": "/nu3Logo.svg",

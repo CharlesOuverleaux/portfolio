@@ -8,19 +8,27 @@ interface JobDetailsProps {
   job: Job;
 }
 
-const LongJobDescription = ({ longJobDescription }) => {
-  return longJobDescription.map((content) => (
-    <li key={content.title}>
-      {content.title}
-      {
-        <ul>
-          {content.description.map((jobDescription, i) => (
-            <li key={i}>{jobDescription}</li>
-          ))}
-        </ul>
-      }
-    </li>
-  ));
+interface MultipleJobsProps {
+  multipleJobs: { title: string; descriptions: string[] }[];
+}
+
+const MultipleJobs: FC<MultipleJobsProps> = ({ multipleJobs }) => {
+  return (
+    <>
+      {multipleJobs.map((content) => (
+        <li key={content.title}>
+          {content.title}
+          {
+            <ul>
+              {content.descriptions.map((description, i) => (
+                <li key={i}>{description}</li>
+              ))}
+            </ul>
+          }
+        </li>
+      ))}
+    </>
+  );
 };
 
 export const JobDetails: FC<JobDetailsProps> = ({ job }) => {
@@ -64,10 +72,8 @@ export const JobDetails: FC<JobDetailsProps> = ({ job }) => {
             )}
             <h3>Work | {job.dates} </h3>
             <ul role="list" className="list-square">
-              {job.longJobDescription ? (
-                <LongJobDescription
-                  longJobDescription={job.longJobDescription}
-                />
+              {job.multipleJobs ? (
+                <MultipleJobs multipleJobs={job.multipleJobs} />
               ) : (
                 job.jobDescription.map((item) => (
                   <li key={item} className="pl-0">
