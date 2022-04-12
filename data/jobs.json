@@ -11,7 +11,6 @@
         "Optimized for maximum speed and scalability e.g. Lighthouse, validator.w3",
         "Collaborated with internal and external stakeholders (product managers, UX/UI agencies and business stakeholders)"
         ],
-      "href": "#",
       "imageSrc": "/OneFootballLogo.svg",
       "imageAlt": "OneFootball Logo",
       "dates": "Feb. 2022 - Present",
@@ -36,7 +35,6 @@
         "Developed a solution matching the user profile to live weather conditions (API)",
         "Shipped the prototype to production"
         ],
-      "href": "#",
       "imageSrc": "/SurfEasyLogo.svg",
       "imageAlt": "SurfEasy Logo",
       "dates": "Jun. 2021",
@@ -54,13 +52,12 @@
       "companyDescription":"This is my first project form Le Wagon. Are you stuck with your code? Rent a techy gets you technical support immediately from skilled and trustworthy people. This app is connecting developers and experts with people in need of support. Users can filters all developers that are available based on their skills, then book a session and leave a review of the support. It was developed as a team of 4 in 1 week.",
       "techStack": ["Ruby on rails", "JavaScript", "HTML", "SCSS", "PostgreSQL", "Heroku"],
       "title": "FullStack Engineer",
-      "jobDescription": [ "Based the prototype on a Airbnb MVP model",
-        "Designed user paths and pages in figma", 
+      "jobDescription": [ "Built an Airbnb MVP model based prototype",
+        "Created user stories and designed user paths in figma", 
         "Collaborated with 4 developers to implement both backend and frontend",
         "Developed a booking system for users (host/guest model)",
         "Shipped the prototype to production"
         ],
-      "href": "#",
       "imageSrc": "/RentaTechyLogo.svg",
       "imageAlt": "Rent a Techy Logo",
       "dates": "May 2021",
@@ -83,7 +80,6 @@
         "Owned advanced ETL/SQL queries for large data sets, delivering outputs for weekly and monthly business reviews",
         "Acted as Amazon Data Champion, improving data accessibility for the EU business teams"
         ],
-      "href": "#",
       "imageSrc": "/AmazonLogo.svg",
       "imageAlt": "Amazon Logo",
       "dates": "Nov. 2019 - Mar. 2021",
@@ -108,7 +104,6 @@
         "Category Manager: Led the change of portfolio strategy from marketplace to an own brand shop, resulting in a +35% increase in profitability ",
         "Category Manager: Acted as key stakeholder between purchasers, pricing analysts, content managers and marketing managers"
         ],
-      "href": "#",
       "imageSrc": "/nu3Logo.svg",
       "imageAlt": "nu3 Logo",
       "dates": "May 2016 - Oct. 2019",
@@ -128,7 +123,6 @@
       "title": "Int. Category Manager",
       "jobDescription": ["Launched and developed the sales of the international shops increasing the international revenue share from <1% to +15%"
         ],
-      "href": "#",
       "imageSrc": "/Home24Logo.svg",
       "imageAlt": "Home24 Logo",
       "dates": "Feb. 2022 - Present",
