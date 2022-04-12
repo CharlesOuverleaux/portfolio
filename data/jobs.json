@@ -112,9 +112,9 @@
       "imageAlt": "nu3 Logo",
       "dates": "May 2016 - Oct. 2019",
       "featuredImages" : [
-        { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
-        { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
-        { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
+        { "imageSrc": "/nu3-1.png", "imageAlt": "nu3 Website" },
+        { "imageSrc": "/nu3-2.png", "imageAlt": "nu3 Healthy food" },
+        { "imageSrc": "/nu3-3.png", "imageAlt": "nu3 Office Berlin" }
       ],
       "links": {"siteLink": "/", "githubLink": "/", "youtubeLink": "/"},
       "isTechnicalJob": false
@@ -125,15 +125,15 @@
       "companyDescription":"#1 Pure-Play Home & Living e-commerce platform in continental Europe and Brazil. The home24 platform is available in seven European markets: Germany, France, Austria, the Netherlands, Switzerland, Belgium, and Italy – and in Brazil.",
       "techStack": ["none"],
       "title": "Int. Category Manager",
-      "jobDescription": ["Launched and developed the sales of the international shops increasing the international revenue share from <1% to +15%"
+      "jobDescription": ["Launched and developed the sales of the international shops increasing the international revenue share from <1% to +15%", "Acted as key stakeholder between purchasers, pricing analysts, content managers and marketing managers", "Built a category analysis tool (Excel/VBA) to report on revenue and margin performance (Sales, CMI and CMII trends)"
         ],
       "imageSrc": "/Home24Logo.svg",
       "imageAlt": "Home24 Logo",
       "dates": "Feb. 2022 - Present",
       "featuredImages" : [
-        { "imageSrc": "/OneFootball.svg", "imageAlt": "Slide1" },
-        { "imageSrc": "/Arts.jpg", "imageAlt": "Slide2" },
-        { "imageSrc": "/Arts2.jpg", "imageAlt": "Slide3" }
+        { "imageSrc": "/Home24-1.png", "imageAlt": "Home24 Website" },
+        { "imageSrc": "/Home24-2.jpeg", "imageAlt": "Home24 Showroom" },
+        { "imageSrc": "/Home24-3.jpeg", "imageAlt": "Home24 Furniture" }
       ],
       "links": {"siteLink": "https://www.home24.com/websites/homevierundzwanzig/English/1/homepage.html"},
       "isTechnicalJob": false

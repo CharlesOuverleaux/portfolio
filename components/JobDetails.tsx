@@ -7,7 +7,6 @@ import { Slider } from "./index";
 interface JobDetailsProps {
   job: Job;
 }
-
 interface MultipleJobsProps {
   multipleJobs: { title: string; descriptions: string[] }[];
 }
