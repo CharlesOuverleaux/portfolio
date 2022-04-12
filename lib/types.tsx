@@ -9,6 +9,7 @@ export type Job = {
   techStack: string[];
   title: string;
   jobDescription: string[];
+  longJobDescription: {}[] | undefined;
   imageSrc: string;
   imageAlt: string;
   dates: string;

@@ -8,6 +8,21 @@ interface JobDetailsProps {
   job: Job;
 }
 
+const LongJobDescription = ({ longJobDescription }) => {
+  return longJobDescription.map((content) => (
+    <li key={content.title}>
+      {content.title}
+      {
+        <ul>
+          {content.description.map((jobDescription, i) => (
+            <li key={i}>{jobDescription}</li>
+          ))}
+        </ul>
+      }
+    </li>
+  ));
+};
+
 export const JobDetails: FC<JobDetailsProps> = ({ job }) => {
   return (
     <>
@@ -49,11 +64,17 @@ export const JobDetails: FC<JobDetailsProps> = ({ job }) => {
             )}
             <h3>Work | {job.dates} </h3>
             <ul role="list" className="list-square">
-              {job.jobDescription.map((item) => (
-                <li key={item} className="pl-0">
-                  {item}
-                </li>
-              ))}
+              {job.longJobDescription ? (
+                <LongJobDescription
+                  longJobDescription={job.longJobDescription}
+                />
+              ) : (
+                job.jobDescription.map((item) => (
+                  <li key={item} className="pl-0">
+                    {item}
+                  </li>
+                ))
+              )}
             </ul>
             <IconsBar links={job.links} />
           </div>
