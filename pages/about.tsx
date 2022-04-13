@@ -14,14 +14,11 @@ const About: NextPage = () => {
       <Page>
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           {/* Ref: https://daily-dev-tips.com/posts/css-text-color-difference-based-on-background/ */}
-          <div className="fixed h-screen text-white max-w-7xl mix-blend-difference">
-            <p className="text-5xl uppercase">
-              Building <br />
-              is more <br />
-              than <br />
-              a <br />
-              passion
-            </p>
+          <div className="fixed h-screen text-white max-w-7xl">
+              <p className="text-5xl uppercase bg-[url('/surf2.svg')] bg-no-repeat bg-cover bg-clip-text text-transparent">
+                Building is more <br />
+                than a passion
+              </p>
             <div className="grid w-full grid-cols-3 pt-12 italic uppercase">
               <p>Beautiful Frontend Applications</p>
               <p>Innovative Tech Products</p>
