@@ -1,0 +1,141 @@
+[
+    {
+      "jobId": 1,
+      "company": "OneFootball",
+      "companyDescription":"With OneFootball, we're forging a new path in the Blockchain/NFT space. We've established a unique strategy to build an amazing product in partnership with the most prolific organizations in the NFT field. We are interested in making a long-term contribution and pushing the sports/NFT ecosystem to the next level.",
+      "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
+      "title": "Frontend Engineer NFT",
+      "jobDescription": ["Developed an innovatie NFT marketplace application frontend (MVP cycles)",
+        "Built reusable UI components based on Figma designs", 
+        "Developed unit, integration and functional tests e.g. Jest, Playwright",
+        "Optimized for maximum speed and scalability e.g. Lighthouse, validator.w3",
+        "Collaborated with internal and external stakeholders (product managers, UX/UI agencies and business stakeholders)"
+        ],
+      "imageSrc": "/OneFootballLogo.svg",
+      "imageAlt": "OneFootball Logo",
+      "dates": "Feb. 2022 - Present",
+      "featuredImages" : [
+        { "imageSrc": "/Hero.png", "imageAlt": "aera.onefootball.com" },
+        { "imageSrc": "/Players.png", "imageAlt": "Aera players" },
+        { "imageSrc": "/OneFootball.svg", "imageAlt": "OneFootball Labs Office" }
+      ],
+      "links": {"siteLink": "https://aera.onefootball.com/", "githubLink": "https://github.com/motain/aera"},
+      "isTechnicalJob": true
+    },
+    {
+      "jobId": 2,
+      "company": "SurfEasy",
+      "companyDescription":"This is my final project form Le Wagon. What if there was a tinder for surfers and waves? SurfEasy is a mobile friendly app searching the best waves depending on a surfers location, level and live weather data. It was developed as a team of 4 in 2 weeks.",
+      "techStack": ["Ruby on rails", "JavaScript", "HTML", "SCSS", "PostgreSQL", "Heroku"],
+      "title": "FullStack Engineer",
+      "jobDescription": ["Pitched and developed the idea from scratch to production", 
+        "Created user stories based on defined customer profiles", 
+        "Designed user paths and pages in figma with UI/UX designers", 
+        "Collaborated with 4 developers to implement both backend and frontend",
+        "Developed a solution matching the user profile to live weather conditions (API)",
+        "Shipped the prototype to production"
+        ],
+      "imageSrc": "/SurfEasyLogo.svg",
+      "imageAlt": "SurfEasy Logo",
+      "dates": "Jun. 2021",
+      "featuredImages" : [
+        { "imageSrc": "/SurfEasyMobile.png", "imageAlt": "surf-easy.com" },
+        { "imageSrc": "/SurfEasyMobile2.png", "imageAlt": "SurfEasy Mobile Flow" },
+        { "imageSrc": "/SurfEasyMobile3.png", "imageAlt": "SurfEasy motto" }
+      ],
+      "links": {"siteLink": "https://www.surf-easy.com/", "githubLink": "https://github.com/CharlesOuverleaux/surfeasy", "youtubeLink": "https://www.youtube.com/watch?v=snYk8xveH5g&t=718s&ab_channel=LeWagon"},
+      "isTechnicalJob": true
+    },
+    {
+      "jobId": 3,
+      "company": "Rent a Techy",
+      "companyDescription":"This is my first project form Le Wagon. Are you stuck with your code? Rent a techy gets you technical support immediately from skilled and trustworthy people. This app is connecting developers and experts with people in need of support. Users can filters all developers that are available based on their skills, then book a session and leave a review of the support. It was developed as a team of 4 in 1 week.",
+      "techStack": ["Ruby on rails", "JavaScript", "HTML", "SCSS", "PostgreSQL", "Heroku"],
+      "title": "FullStack Engineer",
+      "jobDescription": [ "Built an Airbnb MVP model based prototype",
+        "Created user stories and designed user paths in figma", 
+        "Collaborated with 4 developers to implement both backend and frontend",
+        "Developed a booking system for users (host/guest model)",
+        "Shipped the prototype to production"
+        ],
+      "imageSrc": "/RentaTechyLogo.svg",
+      "imageAlt": "Rent a Techy Logo",
+      "dates": "May 2021",
+      "featuredImages" : [
+        { "imageSrc": "/RentATechy1.png", "imageAlt": "Rent a Techy CTA" },
+        { "imageSrc": "/RentATechy2.png", "imageAlt": "Rent a Techy offers" },
+        { "imageSrc": "/RentATechy3.png", "imageAlt": "Rent a Techy booking system" }
+      ],
+      "links": {"siteLink": "https://rent-a-techy-charlesouverleaux.herokuapp.com/", "githubLink": "https://github.com/CharlesOuverleaux/rent-a-techy"},
+      "isTechnicalJob": true
+    },
+    {
+      "jobId": 4,
+      "company": "Amazon",
+      "companyDescription":"Discover big ideas from small brands. The Amazon Launchpad mission is to support entrepreneurs by providing resources, expertise and global support to help showcase and deliver innovative products like yours to millions of Amazon customers.",
+      "techStack": ["none"],
+      "title": "Strategic Startup Manager",
+      "jobDescription": ["Consulted Europe’s largest startups and emerging brands (>$20M), grow their businesses across 6 countries, generating a +200% YoY growth for a portfolio of +25 brands", "Co-ordinated a self-service online platform, scaling operations and education for > 500 brands, reducing operational queries by 50%",
+        "Set-up a tool evaluating brands achievements and team resource allocations for +200 brands",
+        "Owned advanced ETL/SQL queries for large data sets, delivering outputs for weekly and monthly business reviews",
+        "Acted as Amazon Data Champion, improving data accessibility for the EU business teams"
+        ],
+      "imageSrc": "/AmazonLogo.svg",
+      "imageAlt": "Amazon Logo",
+      "dates": "Nov. 2019 - Mar. 2021",
+      "featuredImages" : [
+        { "imageSrc": "/Amazon3.png", "imageAlt": "Amazon Launchpad" },
+        { "imageSrc": "/Amazon1.png", "imageAlt": "Amazon Launchpad store" },
+        { "imageSrc": "/Amazon2.png", "imageAlt": "Amazon Launchpad categories" }
+      ],
+      "links": {"siteLink": "https://www.amazon.co.uk/gp/browse.html?node=7212961031&ref_=nav_em__launch_all_0_1_1_25", "youtubeLink": "https://www.youtube.com/watch?v=HwZq6VVCfTs&ab_channel=AmazonLaunchpad"},
+      "isTechnicalJob": false
+    },
+    {
+      "jobId": 5,
+      "company": "nu3",
+      "companyDescription":"Nu3 develops innovative products of the highest quality for health-conscious people. The portfolio comprises four product lines: Natural Food, Fitness, Weight Loss and Health. With these smart nutrition products, nu3 is helping you lead a healthier and fitter life. They are easy to integrate into your daily routine, provide you with nutrients and support you in a healthy lifestyle.",
+      "techStack": ["none"],
+      "title": "Head of CRM",
+      "jobDescription": [],
+      "multipleJobs":[
+        {"title": "Head of CRM",
+          "descriptions": ["Optimised retention developing global strategies, customer journeys and campaigns across 6 markets",
+          "Implemented automated processes reducing manual efforts (-8H/week) and increasing content quality",
+          "Led a team of Senior and Junior CRM managers", 
+          "Develop and maintain the marketing dashboard which hosted and managed all marketing optimization processes (Python, Django)"]},
+        {"title": "Category Manager",
+          "descriptions": ["Led the change of portfolio strategy from marketplace to an own brand shop, resulting in a +35% increase in profitability ",
+          "Acted as key stakeholder between purchasers, pricing analysts, content managers and marketing managers"]}
+      ],
+      "imageSrc": "/nu3Logo.svg",
+      "imageAlt": "nu3 Logo",
+      "dates": "May 2016 - Oct. 2019",
+      "featuredImages" : [
+        { "imageSrc": "/nu3-1.png", "imageAlt": "nu3 Website" },
+        { "imageSrc": "/nu3-2.png", "imageAlt": "nu3 Healthy food" },
+        { "imageSrc": "/nu3-3.png", "imageAlt": "nu3 Office Berlin" }
+      ],
+      "links": {"siteLink": "/", "githubLink": "/", "youtubeLink": "/"},
+      "isTechnicalJob": false
+    },
+    {
+      "jobId": 6,
+      "company": "Home24",
+      "companyDescription":"#1 Pure-Play Home & Living e-commerce platform in continental Europe and Brazil. The home24 platform is available in seven European markets: Germany, France, Austria, the Netherlands, Switzerland, Belgium, and Italy – and in Brazil.",
+      "techStack": ["none"],
+      "title": "Int. Category Manager",
+      "jobDescription": ["Launched and developed the sales of the international shops increasing the international revenue share from <5% to +35%", "Acted as key stakeholder between purchasers, pricing analysts, content managers and marketing managers", "Built a category analysis tool (Excel/VBA) to report on revenue and margin performance (Sales, CMI and CMII trends)"
+        ],
+      "imageSrc": "/Home24Logo.svg",
+      "imageAlt": "Home24 Logo",
+      "dates": "Feb. 2022 - Present",
+      "featuredImages" : [
+        { "imageSrc": "/Home24-1.png", "imageAlt": "Home24 Website" },
+        { "imageSrc": "/Home24-2.png", "imageAlt": "Home24 Showroom" },
+        { "imageSrc": "/Home24-3.png", "imageAlt": "Home24 Shop the look"}
+      ],
+      "links": {"siteLink": "https://www.home24.com/websites/homevierundzwanzig/English/1/homepage.html"},
+      "isTechnicalJob": false
+    }
+  ]
