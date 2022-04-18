@@ -8,6 +8,9 @@ module.exports = {
       square: "square",
     },
     extend: {
+      fontFamily: {
+        bebas: ["Bebas Neue", "cursive"],
+      },
       boxShadow: {
         "co-blue": "4px 4px 0 #183DF2",
         "co-light": "4px 4px 0 #F4F6FC",
