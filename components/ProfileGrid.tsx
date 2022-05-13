@@ -1,4 +1,6 @@
 import React, { FC } from "react";
+import Image from "next/image";
+import programmingPic from "../public/profile/Programming.png";
 
 export const ProfileGrid: FC = () => {
   return (
@@ -8,8 +10,18 @@ export const ProfileGrid: FC = () => {
         <div className="bg-[#3a0ca3]">Color 2</div>
         <div className="bg-[#7209b7]">Color 3</div>
         <div className="bg-[#f72585]">Color 4</div>
-        <div className="col-start-1 col-end-3 row-start-2 row-end-4">
-          <h2>Programming</h2>
+        <div className="relative h-[267px] col-start-1 col-end-3 row-start-2 row-end-4">
+          <Image
+            src={programmingPic}
+            alt="Programming"
+            layout="responsive"
+            width={1180}
+            height={534}
+            objectFit="cover"
+            objectPosition="center"
+            placeholder="blur"
+          />
+          <h2 className="text-white">Programming</h2>
         </div>
         <div className="col-start-3 col-end-4 row-start-2 row-end-3">
           Github
