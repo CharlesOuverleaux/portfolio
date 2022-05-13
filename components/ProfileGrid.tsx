@@ -11,6 +11,11 @@ export const ProfileGrid: FC = () => {
         <div className="bg-[#7209b7]">Color 3</div>
         <div className="bg-[#f72585]">Color 4</div>
         <div className="relative h-[267px] col-start-1 col-end-3 row-start-2 row-end-4">
+          <div className="absolute z-10 flex items-center justify-center w-full h-full">
+            <h2 className="text-2xl font-bold text-white uppercase">
+              Programming
+            </h2>
+          </div>
           <Image
             src={programmingPic}
             alt="Programming"
@@ -21,7 +26,6 @@ export const ProfileGrid: FC = () => {
             objectPosition="center"
             placeholder="blur"
           />
-          <h2 className="text-white">Programming</h2>
         </div>
         <div className="col-start-3 col-end-4 row-start-2 row-end-3">
           Github
