@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import Image from "next/image";
 import programmingPic from "../public/profile/Programming.png";
+import fuelPic from "../public/profile/Fuel.png";
 
 export const ProfileGrid: FC = () => {
   return (
@@ -40,7 +41,16 @@ export const ProfileGrid: FC = () => {
           Surfing
         </div>
         <div className="col-start-2 col-end-3 row-start-4 row-end-5">
-          Find your passion
+          <Image
+            src={fuelPic}
+            alt="Programming"
+            layout="responsive"
+            width={592}
+            height={268}
+            objectFit="cover"
+            objectPosition="center"
+            placeholder="blur"
+          />
         </div>
         <div className="col-start-2 col-end-3 row-start-5 row-end-6">Music</div>
         <div className="col-start-3 col-end-5 row-start-4 row-end-6">
