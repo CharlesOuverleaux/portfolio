@@ -1,12 +1,12 @@
 import { FC } from "react";
-import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
+import { MailIcon } from "@heroicons/react/outline";
 
 export const EmailForm: FC = () => {
   return (
     <div className="bg-white">
       <div className="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="relative bg-white shadow-xl border-[1px]">
-          <h2 className="sr-only">Contact us</h2>
+          <h1 className="sr-only">Contact me</h1>
 
           <div className="grid grid-cols-1 lg:grid-cols-3">
             {/* Contact information */}
@@ -110,9 +110,9 @@ export const EmailForm: FC = () => {
                   </defs>
                 </svg>
               </div>
-              <h3 className="text-lg font-medium text-white">
-                Contact information
-              </h3>
+              <h2 className="text-lg font-medium text-white">
+                My contact information
+              </h2>
               <p className="max-w-3xl mt-6 text-base text-indigo-50">
                 Send a general message or details of a project you&apos;d like
                 me to be a part of and I&apos;ll get back to you as soon as
@@ -136,9 +136,9 @@ export const EmailForm: FC = () => {
 
             {/* Contact form */}
             <div className="px-6 py-10 sm:px-10 lg:col-span-2 xl:p-12">
-              <h3 className="text-lg font-medium text-gray-900">
+              <h2 className="text-lg font-medium text-gray-900">
                 Send me a message
-              </h3>
+              </h2>
               <form
                 action="https://formsubmit.co/77623b327f6feeaa67d6a1542d895195"
                 method="POST"

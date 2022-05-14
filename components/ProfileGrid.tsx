@@ -4,12 +4,12 @@ import programmingJson from "../data/programming.json";
 import nftJson from "../data/nft.json";
 import surfJson from "../data/surf.json";
 import woodworkJson from "../data/woodwork.json";
-import musicJson from "../data/music.json";
 import earphonesJson from "../data/earphones.json";
 
 export const ProfileGrid: FC = () => {
   return (
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <h1 className="hidden">More about me</h1>
       <div className="grid-cols-4 sm:grid">
         <div className="bg-[#4895ef] h-2"></div>
         <div className="bg-[#3a0ca3] h-2"></div>
@@ -71,7 +71,7 @@ export const ProfileGrid: FC = () => {
           <Lottie loop animationData={earphonesJson} play />
           <div className="absolute flex items-center invisible w-full h-full group-hover:visible">
             <div className="text-center">
-              <h2 className="text-3xl text-white uppercase">MUSIC</h2>
+              <h2 className="text-3xl text-white uppercase">Music</h2>
               <p className="text-white uppercase">
                 In my free time I love to go to concerts, play the guitar and
                 the bass.

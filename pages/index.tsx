@@ -15,6 +15,7 @@ const Home: NextPage = () => {
       </Head>
       <Page>
         <main>
+          <h1 className="hidden">Charles Ouverleaux | Frontend Engineer</h1>
           <CardList jobs={jobs} />
         </main>
       </Page>

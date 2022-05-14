@@ -21,21 +21,21 @@ const NameInitials: FC = () => {
         <div className="flex flex-row w-full">
           <Image
             src="/C.svg"
-            alt="C"
+            alt="Charles"
             width={45}
             height={75}
             className="animate-introY1"
           />
           <Image
             src="/A.svg"
-            alt="A"
+            alt="Antoine"
             width={45}
             height={75}
             className="animate-introY2"
           />
           <Image
             src="/O.svg"
-            alt="O"
+            alt="Ouverleaux"
             width={45}
             height={75}
             className="animate-introY3"

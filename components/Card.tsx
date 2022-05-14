@@ -20,6 +20,9 @@ const CardBack: FC<CardProps> = ({ job }) => {
         <div className="absolute top-0 left-0 m-4 animate-introX2">
           <p>{job.title}</p>
           <p>{job.company}</p>
+          <h3 className="hidden">
+            {job.company} - {job.title}
+          </h3>
         </div>
         <div className="absolute bottom-0 right-0 m-4 animate-introX1">
           <p>Read more</p>
