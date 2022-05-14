@@ -9,8 +9,6 @@ const Contact: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Charles Ouverleaux</title>
-        <meta name="description" content="Welcome to my profile page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Page>

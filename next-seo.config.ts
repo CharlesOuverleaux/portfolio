@@ -5,9 +5,9 @@
 import { DefaultSeoProps } from "next-seo/lib/types";
 
 const siteName = "charlesouverleaux.co";
-const title = "Charles Ouverleaux | Frontend Engineer";
+const title = " | Frontend Engineer";
 const description =
-  "From business to tech. Frontend engineer with business and marketing background";
+  "From business to tech. Frontend engineer with business and marketing background.";
 const keywords = [
   "Frontend engineer",
   "Web developement",
