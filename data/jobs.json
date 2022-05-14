@@ -1,8 +1,8 @@
 [
     {
       "jobId": 1,
-      "company": "OneFootball",
-      "companyDescription":"With OneFootball, we're forging a new path in the Blockchain/NFT space. We've established a unique strategy to build an amazing product in partnership with the most prolific organizations in the NFT field. We are interested in making a long-term contribution and pushing the sports/NFT ecosystem to the next level.",
+      "company": "OneFootball Labs",
+      "companyDescription":"With OneFootball Labs, we're forging a new path in the Blockchain/NFT space. We've established a unique strategy to build an amazing product in partnership with the most prolific organizations in the NFT field. We are interested in making a long-term contribution and pushing the sports/NFT ecosystem to the next level.",
       "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
       "title": "Frontend Engineer NFT",
       "jobDescription": ["Developed an innovatie NFT marketplace application frontend (MVP cycles)",
