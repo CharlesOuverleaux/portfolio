@@ -9,7 +9,7 @@
         "Built reusable UI components based on Figma designs", 
         "Developed unit, integration and functional tests e.g. Jest, Playwright, CI/CD",
         "Optimized for maximum speed and scalability e.g. Lighthouse, validator.w3",
-        "Used version control (Git) and developed continously with code reviews and pair programming",
+        "Directly reporting to the Tech Lead (version control (Git), code reviews and pair programming)",
         "Collaborated external stakeholders (product managers (Agile), UX/UI agencies and business stakeholders)"
         ],
       "imageSrc": "/OneFootballLogo.svg",
@@ -20,7 +20,7 @@
         { "imageSrc": "/Players.png", "imageAlt": "Aera players" },
         { "imageSrc": "/OneFootball.svg", "imageAlt": "OneFootball Labs Office" }
       ],
-      "links": {"siteLink": "https://aera.onefootball.com/", "githubLink": "https://github.com/motain/aera"},
+      "links": {"siteLink": "https://aera.onefootball.com/"},
       "isTechnicalJob": true
     },
     {
@@ -32,7 +32,7 @@
       "jobDescription": ["Pitched and developed the idea from scratch to production", 
         "Created user stories based on defined customer profiles", 
         "Designed user paths and pages in figma with UI/UX designers", 
-        "Collaborated with 4 developers to implement both backend and frontend",
+        "Collaborated with 4 developers to implement both backend and frontend (version control (Git), code reviews and pair programming)",
         "Developed a solution matching the user profile to live weather conditions (API)",
         "Shipped the prototype to production"
         ],
