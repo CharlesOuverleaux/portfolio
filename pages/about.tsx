@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Page } from "../components/Page";
-import { ProfileGrid } from "../components/ProfileGrid";
+import { ProfileGrid } from "../components/.";
 
 const About: NextPage = () => {
   return (
