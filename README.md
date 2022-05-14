@@ -35,6 +35,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 TODO:
-- Complete about me page 
+- Complete about me page X
 - Add SEO features 
 - Add contact me page 
