@@ -5,6 +5,7 @@ import nftJson from "../data/nft.json";
 import surfJson from "../data/surf.json";
 import woodworkJson from "../data/woodwork.json";
 import musicJson from "../data/music.json";
+import earphonesJson from "../data/earphones.json";
 
 export const ProfileGrid: FC = () => {
   return (
@@ -23,7 +24,7 @@ export const ProfileGrid: FC = () => {
               <h2 className="text-3xl text-white uppercase sm:text-5xl">
                 Programming
               </h2>
-              <p className="text-white">
+              <p className="text-white uppercase">
                 Building is more than a passion. I love to create great products
                 from scratch and add my 6 years of experience in sales and
                 marketing to create the best user services and experiences.
@@ -36,9 +37,8 @@ export const ProfileGrid: FC = () => {
           <div className="absolute flex items-center invisible w-full h-full group-hover:visible">
             <div className="text-center">
               <h2 className="text-3xl text-white uppercase">Surfing</h2>
-              <p className="text-white">
-                If I am not behind my computer, you will most likely find me in
-                the water.
+              <p className="text-white uppercase">
+                If I am not behind my computer, you will find me in the water.
               </p>
             </div>
           </div>
@@ -48,9 +48,9 @@ export const ProfileGrid: FC = () => {
           <div className="absolute flex items-center invisible w-full h-full group-hover:visible">
             <div className="text-center">
               <h2 className="text-3xl text-white uppercase">WoodWorking</h2>
-              <p className="text-white">
-                My journey started building a few skateboards, now I build and
-                shape sustainable wooden surfboards.
+              <p className="text-white uppercase">
+                From building skateboards, to shaping sustainable wooden
+                surfboards.
               </p>
             </div>
           </div>
@@ -60,19 +60,19 @@ export const ProfileGrid: FC = () => {
           <div className="absolute flex items-center invisible w-full h-full group-hover:visible">
             <div className="text-center">
               <h2 className="text-3xl text-white uppercase">NFT / WEB3</h2>
-              <p className="text-white">
-                I believe this technology will challenge our society and enable
-                to empower creators.
+              <p className="text-white uppercase">
+                This technology will challenge our society and enable to empower
+                creators.
               </p>
             </div>
           </div>
         </div>
         <div className="group relative flex items-center justify-center col-start-4 col-end-5 row-start-2 row-end-3 hover:bg-[#3a0ca3]">
-          <Lottie loop animationData={musicJson} play />
+          <Lottie loop animationData={earphonesJson} play />
           <div className="absolute flex items-center invisible w-full h-full group-hover:visible">
             <div className="text-center">
               <h2 className="text-3xl text-white uppercase">MUSIC</h2>
-              <p className="text-white">
+              <p className="text-white uppercase">
                 In my free time I love to go to concerts, play the guitar and
                 the bass.
               </p>
