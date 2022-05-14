@@ -11,10 +11,10 @@ export const ProfileGrid: FC = () => {
   return (
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div className="grid-cols-4 sm:grid">
-        <div className="bg-[#4895ef] h-2 sm:rounded-l-md"></div>
+        <div className="bg-[#4895ef] h-2"></div>
         <div className="bg-[#3a0ca3] h-2"></div>
         <div className="bg-[#7209b7] h-2"></div>
-        <div className="bg-[#f72585] h-2 sm:rounded-r-md"></div>
+        <div className="bg-[#f72585] h-2"></div>
       </div>
       <div className="grid-cols-4 grid-rows-2 sm:grid">
         <div className="group flex relative items-center justify-center h-full col-start-1 col-end-3 row-start-1 row-end-3 hover:bg-[#7209b7]">
