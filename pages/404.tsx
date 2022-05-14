@@ -9,7 +9,6 @@ const About: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Charles Ouverleaux</title>
         <meta name="description" content="404 Woups" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

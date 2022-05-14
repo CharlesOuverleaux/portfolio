@@ -8,6 +8,6 @@ export const allJobs = async (): Promise<Job[]> => {
 };
 
 // Select One
-export const findJobById = async (jobId: number): Promise<Job | undefined> => {
+export const findJobById = async (jobId: number): Promise<Job> => {
   return jobs.find((job: Job) => job.jobId === jobId);
 };

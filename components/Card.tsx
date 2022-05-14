@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { CardProps } from "../lib/types";
 import Image from "next/image";
-import Hover from "react-3d-hover";
+// import Hover from "react-3d-hover";
 
 const CardFront: FC<CardProps> = ({ job }) => {
   return (
@@ -34,19 +34,19 @@ const CardBack: FC<CardProps> = ({ job }) => {
 
 export const Card: FC<CardProps> = ({ job }) => {
   return (
-    <Hover>
-      <a href={"jobs/" + job.jobId.toString()}>
-        <div className="container" key={job.jobId}>
-          <div className="shadow-2xl group card">
-            <div className="block group-hover:hidden">
-              <CardFront job={job} />
-            </div>
-            <div className="hidden group-hover:block">
-              <CardBack job={job} />
-            </div>
+    // <Hover>
+    <a href={"jobs/" + job.jobId.toString()}>
+      <div className="container" key={job.jobId}>
+        <div className="shadow-2xl group card">
+          <div className="block group-hover:hidden">
+            <CardFront job={job} />
+          </div>
+          <div className="hidden group-hover:block">
+            <CardBack job={job} />
           </div>
         </div>
-      </a>
-    </Hover>
+      </div>
+    </a>
+    // </Hover>
   );
 };
