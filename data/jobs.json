@@ -7,9 +7,10 @@
       "title": "Frontend Engineer NFT",
       "jobDescription": ["Developed an innovatie NFT marketplace application frontend (MVP cycles)",
         "Built reusable UI components based on Figma designs", 
-        "Developed unit, integration and functional tests e.g. Jest, Playwright",
+        "Developed unit, integration and functional tests e.g. Jest, Playwright, CI/CD",
         "Optimized for maximum speed and scalability e.g. Lighthouse, validator.w3",
-        "Collaborated with internal and external stakeholders (product managers, UX/UI agencies and business stakeholders)"
+        "Used version control (Git) and developed continously with code reviews and pair programming",
+        "Collaborated external stakeholders (product managers (Agile), UX/UI agencies and business stakeholders)"
         ],
       "imageSrc": "/OneFootballLogo.svg",
       "imageAlt": "OneFootball Logo",
