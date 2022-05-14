@@ -9,7 +9,7 @@ interface CardListProps {
 export const CardList: FC<CardListProps> = ({ jobs }) => {
   return (
     <div className="bg-white">
-      <div className="max-w-2xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="max-w-2xl px-4 py-6 mx-auto sm:px-6 lg:max-w-7xl lg:px-8">
         <h2
           id="work"
           className="text-2xl font-extrabold tracking-tight text-gray-900 uppercase"

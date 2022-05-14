@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import type { NextPage } from "next";
-import { Header } from "../components";
+import { Header, Footer } from "../components";
 
 const Body: FC = ({ children }) => {
   return <div className="flex flex-col min-h-screen">{children}</div>;
@@ -15,6 +15,7 @@ export const Page: NextPage = ({ children }) => {
     <Body>
       <Header />
       <Container>{children}</Container>
+      <Footer />
     </Body>
   );
 };
