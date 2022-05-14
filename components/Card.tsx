@@ -15,7 +15,7 @@ const CardFront: FC<CardProps> = ({ job }) => {
 
 const CardBack: FC<CardProps> = ({ job }) => {
   return (
-    <div className="grid w-full overflow-hidden bg-[#183DF2] rounded-md h-80 aspect-square">
+    <div className="grid w-full overflow-hidden rounded-md bg-blue-co h-80 aspect-square">
       <div className="relative w-5/6 font-bold text-white uppercase border-8 border-white place-self-center h-5/6">
         <div className="absolute top-0 left-0 m-4 animate-introX2">
           <p>{job.title}</p>

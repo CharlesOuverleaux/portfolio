@@ -20,7 +20,7 @@ export const JobButton: FC<JobButtonProps> = ({
       <a
         href={"/jobs/" + previousJobId}
         className={clsx(
-          "bg-[#183DF2]",
+          "bg-blue-co",
           "relative notched overflow-hidden",
           "px-8 py-3 z-50 w-36",
           "items-center text-center justify-self-start truncate text-white",
@@ -34,7 +34,7 @@ export const JobButton: FC<JobButtonProps> = ({
       <a
         href={"/jobs/" + nextJobId}
         className={clsx(
-          "bg-[#183DF2]",
+          "bg-blue-co",
           "relative notched overflow-hidden",
           "px-8 py-3 z-50 w-36",
           "items-center text-center justify-self-end",

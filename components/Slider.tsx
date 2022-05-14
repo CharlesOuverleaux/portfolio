@@ -44,7 +44,7 @@ export const Slider: FC<SliderProps> = ({ featuredImages }) => {
                 onClick={() => setCurrentIndex(i)}
                 className={clsx(
                   "w-3 h-3 sm:w-4 sm:h-4 m-1 sm:m-2 rounded-full shadow-lg opacity-80 hover:opacity-100",
-                  currentIndex == i ? "bg-[#183DF2] opacity-100" : "bg-white"
+                  currentIndex == i ? "bg-blue-co opacity-100" : "bg-white"
                 )}
               ></button>
             );

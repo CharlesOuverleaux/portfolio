@@ -8,6 +8,9 @@ module.exports = {
       square: "square",
     },
     extend: {
+      colors: {
+        "blue-co": "#183DF2",
+      },
       fontFamily: {
         bebas: ["Bebas Neue", "cursive"],
       },
