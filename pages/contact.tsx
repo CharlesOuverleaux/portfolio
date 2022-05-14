@@ -2,6 +2,7 @@
 
 import type { NextPage } from "next";
 import Head from "next/head";
+import { EmailForm } from "../components";
 import { Page } from "../components/Page";
 
 const Contact: NextPage = () => {
@@ -13,7 +14,7 @@ const Contact: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Page>
-        <h1>Contact me</h1>
+        <EmailForm />
       </Page>
     </div>
   );
