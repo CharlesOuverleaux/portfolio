@@ -20,7 +20,8 @@ const About: NextPage<PageProps> = ({ canonicalUrl }) => {
         title="About"
         canonical={canonicalUrl}
         openGraph={{
-          title: "charlesouverleaux.co | About",
+          title:
+            "charlesouverleaux.co | About me | BUILDING IS MORE THAN A PASSION",
           url: canonicalUrl,
           type: "profile",
           profile: {

@@ -22,7 +22,8 @@ const Contact: NextPage<PageProps> = ({ canonicalUrl }) => {
         title="Contact"
         canonical={canonicalUrl}
         openGraph={{
-          title: "charlesouverleaux.co | Contact",
+          title:
+            "charlesouverleaux.co | Contact me | Get in touch with me directly",
           url: canonicalUrl,
         }}
       />
