@@ -32,17 +32,17 @@ const Contact: NextPage<PageProps> = ({ canonicalUrl }) => {
           {
             position: 1,
             name: "charlesouverleaux.co",
-            item: "https://charlesouverleaux.co",
+            item: "https://www.charlesouverleaux.co",
           },
           {
             position: 2,
             name: "about",
-            item: "https://charlesouverleaux.co/about",
+            item: "https://www.charlesouverleaux.co/about",
           },
           {
             position: 3,
             name: "contact",
-            item: "https://charlesouverleaux.co/contact",
+            item: "https://www.charlesouverleaux.co/contact",
           },
         ]}
       />
