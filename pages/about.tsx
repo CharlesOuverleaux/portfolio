@@ -17,11 +17,10 @@ const About: NextPage<PageProps> = ({ canonicalUrl }) => {
   return (
     <div>
       <NextSeo
-        title="About"
+        title="charlesouverleaux.co | About me | Building is more than a passion"
         canonical={canonicalUrl}
         openGraph={{
-          title:
-            "charlesouverleaux.co | About me | Building is more than a passion",
+          title: "charlesouverleaux.co | About",
           url: canonicalUrl,
           type: "profile",
           profile: {

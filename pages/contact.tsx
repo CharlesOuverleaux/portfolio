@@ -19,11 +19,10 @@ const Contact: NextPage<PageProps> = ({ canonicalUrl }) => {
   return (
     <div>
       <NextSeo
-        title="Contact"
+        title="charlesouverleaux.co | Contact me | Get in touch with me directly"
         canonical={canonicalUrl}
         openGraph={{
-          title:
-            "charlesouverleaux.co | Contact me | Get in touch with me directly",
+          title: "charlesouverleaux.co | Contact",
           url: canonicalUrl,
         }}
       />
