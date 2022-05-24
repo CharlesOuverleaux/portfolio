@@ -17,3 +17,7 @@ export type Job = {
   links: { siteLink: string; githubLink: string; youtubeLink: string };
   isTechnicalJob: boolean;
 };
+
+export type PageProps = {
+  canonicalUrl?: string;
+};
