@@ -33,32 +33,30 @@ interface Params extends ParsedUrlQuery {
   jobId: string;
 }
 
-
 export const getStaticProps: GetStaticProps<Props, Params> = async ({
   params,
 }) => {
   const { jobId } = params!;
   const job = await findJobById(jobId);
 
-  const jobs = await allJobs(); 
+  const jobs = await allJobs();
 
   return {
     props: {
       job,
-      jobs
+      jobs,
     },
   };
 };
 
-
 interface Props {
   job: Job;
-  jobs: Job[]
+  jobs: Job[];
 }
 
 const JobPage: NextPage<Props> = ({ job, jobs }) => {
   library.add(faYoutube, faGithub, faChrome);
-  
+
   const previousJobId = getPreviousJob(job.jobId, jobs);
   const nextJobId = getNextJob(job.jobId, jobs);
 
@@ -74,6 +72,9 @@ const JobPage: NextPage<Props> = ({ job, jobs }) => {
     <Page>
       <div className="overflow-hidden bg-white">
         <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <h1 className="hidden">
+            {job.company} {job.title}
+          </h1>
           <JobDetails job={job} />
           <JobButton
             previousJob={previousJob}
