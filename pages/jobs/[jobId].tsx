@@ -20,8 +20,12 @@ interface Props {
 // TODO: Replace jobID by job slug (text instead of id)
 
 const JobPage: NextPage<Props> = ({ job }) => {
-  const jobs = useApiData<Job[]>("/api/jobs", []);
+  // TODO: replace this custom hook by useSWR
+  // const jobs = useApiData<Job[]>("/api/jobs", []);
+  const jobs: Job[] = require("../../data/jobs.json");
+
   library.add(faYoutube, faGithub, faChrome);
+  
   const previousJobId = getPreviousJob(job.jobId, jobs);
   const nextJobId = getNextJob(job.jobId, jobs);
 
