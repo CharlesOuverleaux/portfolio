@@ -1,9 +1,18 @@
-const getPreviousJob = (jobId: number, arrlength: number) => {
-  if (jobId === 1) {
-    return arrlength;
+import { Job } from "../lib/types";
+
+const getPreviousJob = (jobId: string, jobArray: Job[]) => {
+  console.log(jobId);
+  const jobIndex = jobArray.findIndex((item) => item.jobId === jobId);
+  let newIndex;
+  console.log(`${jobId} jobId`);
+  console.log(`${jobIndex} jobIndex`);
+  if (jobIndex === 0) {
+    newIndex = jobArray.length - 1;
   } else {
-    return jobId - 1;
+    newIndex = jobIndex - 1;
   }
+  console.log(newIndex);
+  return jobArray[newIndex].jobId;
 };
 
 export default getPreviousJob;

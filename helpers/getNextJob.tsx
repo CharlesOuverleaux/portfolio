@@ -1,9 +1,18 @@
-const getNextJob = (jobId: number, arrlength: number) => {
-  if (jobId === arrlength) {
-    return 1;
+import { Job } from "../lib/types";
+
+const getNextJob = (jobId: string, jobArray: Job[]) => {
+  const jobIndex = jobArray
+    .map(function (e) {
+      return e.jobId;
+    })
+    .indexOf(jobId);
+  let newIndex;
+  if (jobIndex === jobArray.length - 1) {
+    newIndex = 0;
   } else {
-    return jobId + 1;
+    newIndex = jobIndex + 1;
   }
+  return jobArray[newIndex].jobId;
 };
 
 export default getNextJob;

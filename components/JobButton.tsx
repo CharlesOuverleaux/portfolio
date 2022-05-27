@@ -4,9 +4,9 @@ import { Job } from "../lib/types";
 
 interface JobButtonProps {
   previousJob: Job[];
-  previousJobId: number;
+  previousJobId: string;
   nextJob: Job[];
-  nextJobId: number;
+  nextJobId: string;
 }
 
 export const JobButton: FC<JobButtonProps> = ({

@@ -1,4 +1,4 @@
-import { GetServerSideProps, NextPage } from "next";
+import { GetStaticProps, NextPage } from "next";
 import { Job } from "../../lib/types";
 import { findJobById } from "../../models/job";
 import { ParsedUrlQuery } from "querystring";
@@ -17,11 +17,13 @@ interface Props {
   job: Job;
 }
 
+// TODO: Replace jobID by job slug (text instead of id)
+
 const JobPage: NextPage<Props> = ({ job }) => {
   const jobs = useApiData<Job[]>("/api/jobs", []);
   library.add(faYoutube, faGithub, faChrome);
-  const previousJobId = getPreviousJob(job.jobId, jobs.length);
-  const nextJobId = getNextJob(job.jobId, jobs.length);
+  const previousJobId = getPreviousJob(job.jobId, jobs);
+  const nextJobId = getNextJob(job.jobId, jobs);
 
   const previousJob = jobs.filter((job) => {
     return job.jobId == previousJobId;
@@ -51,11 +53,29 @@ const JobPage: NextPage<Props> = ({ job }) => {
 interface Params extends ParsedUrlQuery {
   jobId: string;
 }
-export const getServerSideProps: GetServerSideProps<Props, Params> = async ({
+
+// replace by get static path instead of server side props
+// https://nextjs.org/docs/basic-features/data-fetching/get-static-paths
+
+export const getStaticPaths = async () => {
+  return {
+    paths: [
+      { params: { jobId: "onefootball" } },
+      { params: { jobId: "surfeasy" } },
+      { params: { jobId: "rent-a-techy" } },
+      { params: { jobId: "amazon" } },
+      { params: { jobId: "nu3" } },
+      { params: { jobId: "home24" } },
+    ],
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps<Props, Params> = async ({
   params,
 }) => {
   const { jobId } = params!;
-  const job = await findJobById(parseInt(jobId));
+  const job = await findJobById(jobId);
 
   return {
     props: {

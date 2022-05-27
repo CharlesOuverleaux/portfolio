@@ -1,6 +1,6 @@
 [
     {
-      "jobId": 1,
+      "jobId": "onefootball",
       "company": "OneFootball Labs",
       "companyDescription":"With OneFootball Labs, we're forging a new path in the Blockchain/NFT space. We've established a unique strategy to build an amazing product in partnership with the most prolific organizations in the NFT field. We are interested in making a long-term contribution and pushing the sports/NFT ecosystem to the next level.",
       "techStack": ["React", "TypeScript", "Nextjs", "Tailwind", "Flow FCL"],
@@ -24,7 +24,7 @@
       "isTechnicalJob": true
     },
     {
-      "jobId": 2,
+      "jobId": "surfeasy",
       "company": "SurfEasy",
       "companyDescription":"This is my final project form Le Wagon. What if there was a tinder for surfers and waves? SurfEasy is a mobile friendly app searching the best waves depending on a surfers location, level and live weather data. It was developed as a team of 4 in 2 weeks.",
       "techStack": ["Ruby on rails", "JavaScript", "HTML", "SCSS", "PostgreSQL", "Heroku"],
@@ -48,7 +48,7 @@
       "isTechnicalJob": true
     },
     {
-      "jobId": 3,
+      "jobId": "rent-a-techy",
       "company": "Rent a Techy",
       "companyDescription":"This is my first project form Le Wagon. Are you stuck with your code? Rent a techy gets you technical support immediately from skilled and trustworthy people. This app is connecting developers and experts with people in need of support. Users can filters all developers that are available based on their skills, then book a session and leave a review of the support. It was developed as a team of 4 in 1 week.",
       "techStack": ["Ruby on rails", "JavaScript", "HTML", "SCSS", "PostgreSQL", "Heroku"],
@@ -71,7 +71,7 @@
       "isTechnicalJob": true
     },
     {
-      "jobId": 4,
+      "jobId": "amazon",
       "company": "Amazon",
       "companyDescription":"Discover big ideas from small brands. The Amazon Launchpad mission is to support entrepreneurs by providing resources, expertise and global support to help showcase and deliver innovative products like yours to millions of Amazon customers.",
       "techStack": ["none"],
@@ -93,7 +93,7 @@
       "isTechnicalJob": false
     },
     {
-      "jobId": 5,
+      "jobId": "nu3",
       "company": "nu3",
       "companyDescription":"Nu3 develops innovative products of the highest quality for health-conscious people. The portfolio comprises four product lines: Natural Food, Fitness, Weight Loss and Health. With these smart nutrition products, nu3 is helping you lead a healthier and fitter life. They are easy to integrate into your daily routine, provide you with nutrients and support you in a healthy lifestyle.",
       "techStack": ["none"],
@@ -121,7 +121,7 @@
       "isTechnicalJob": false
     },
     {
-      "jobId": 6,
+      "jobId": "home24",
       "company": "Home24",
       "companyDescription":"#1 Pure-Play Home & Living e-commerce platform in continental Europe and Brazil. The home24 platform is available in seven European markets: Germany, France, Austria, the Netherlands, Switzerland, Belgium, and Italy – and in Brazil.",
       "techStack": ["none"],

@@ -3,7 +3,7 @@ export interface CardProps {
 }
 
 export type Job = {
-  jobId: number;
+  jobId: string;
   company: string;
   companyDescription: string;
   techStack: string[];
