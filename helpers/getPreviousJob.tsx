@@ -8,7 +8,6 @@ const getPreviousJob = (jobId: string, jobArray: Job[]) => {
   } else {
     newIndex = jobIndex - 1;
   }
-  console.log(newIndex);
   return jobArray[newIndex].jobId;
 };
 
