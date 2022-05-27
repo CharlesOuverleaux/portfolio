@@ -2,10 +2,11 @@ import type { NextPage, GetStaticProps } from "next";
 import Head from "next/head";
 import { CardList } from "../components";
 import { Page } from "../components/Page";
-import useApiData from "../hooks/use-api-data";
 import { Job } from "../lib/types";
 import { NextSeo, ProfilePageJsonLd } from "next-seo";
 import { PageProps } from "../lib/types";
+import useSWR from "swr";
+import { fetcher } from "../helpers/fetcher";
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -16,7 +17,11 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 const Home: NextPage<PageProps> = ({ canonicalUrl }) => {
-  const jobs = useApiData<Job[]>("api/jobs", []);
+  const { data: jobs, error } = useSWR<Job[]>('/api/jobs', fetcher)
+
+  if (error) return <div>failed to load</div>
+  if (!jobs) return <div>loading...</div>
+  
 
   return (
     <div>

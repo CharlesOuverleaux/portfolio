@@ -3,7 +3,6 @@ import { Job } from "../../lib/types";
 import { findJobById } from "../../models/job";
 import { ParsedUrlQuery } from "querystring";
 import { Page } from "../../components/Page";
-import useApiData from "../../hooks/use-api-data";
 import getPreviousJob from "../../helpers/getPreviousJob";
 import getNextJob from "../../helpers/getNextJob";
 import {
@@ -13,18 +12,20 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { JobButton, JobDetails } from "../../components/.";
+import useSWR from 'swr'
+import { fetcher } from "../../helpers/fetcher";
+
 interface Props {
   job: Job;
 }
 
-// TODO: Replace jobID by job slug (text instead of id)
-
 const JobPage: NextPage<Props> = ({ job }) => {
-  // TODO: replace this custom hook by useSWR
-  // const jobs = useApiData<Job[]>("/api/jobs", []);
-  const jobs: Job[] = require("../../data/jobs.json");
-
   library.add(faYoutube, faGithub, faChrome);
+
+  const { data: jobs, error } = useSWR<Job[]>('/api/jobs', fetcher)
+
+  if (error) return <div>failed to load</div>
+  if (!jobs) return <div>loading...</div>
   
   const previousJobId = getPreviousJob(job.jobId, jobs);
   const nextJobId = getNextJob(job.jobId, jobs);
