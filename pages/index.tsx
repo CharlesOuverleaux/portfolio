@@ -3,7 +3,7 @@ import Head from "next/head";
 import { CardList } from "../components";
 import { Page } from "../components/Page";
 import { Job } from "../lib/types";
-import { NextSeo, ProfilePageJsonLd } from "next-seo";
+import { NextSeo, SocialProfileJsonLd } from "next-seo";
 import { PageProps } from "../lib/types";
 import { allJobs } from "../models/job";
 
@@ -30,6 +30,17 @@ const Home: NextPage<PageProps & { jobs: Job[] }> = ({
           url: canonicalUrl,
           title: "charlesouverleaux.co | Home",
         }}
+      />
+      <SocialProfileJsonLd
+        type="Person"
+        name="Charles Ouverleaux"
+        url="http://charlesouverleaux.com"
+        sameAs={[
+          "https://www.linkedin.com/in/charlesouverleaux/",
+          "https://github.com/CharlesOuverleaux",
+          "https://twitter.com/CO_IN_TECH",
+          "https://stackoverflow.com/users/16106763/charles-ouverleaux",
+        ]}
       />
       <Head>
         <link rel="icon" href="/C.svg" />

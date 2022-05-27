@@ -4,7 +4,7 @@ import type { NextPage, GetStaticProps } from "next";
 import Head from "next/head";
 import { EmailForm } from "../components";
 import { Page } from "../components/Page";
-import { NextSeo, ProfilePageJsonLd } from "next-seo";
+import { NextSeo, SocialProfileJsonLd } from "next-seo";
 import { PageProps } from "../lib/types";
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -25,6 +25,17 @@ const Contact: NextPage<PageProps> = ({ canonicalUrl }) => {
           title: "charlesouverleaux.co | Contact",
           url: canonicalUrl,
         }}
+      />
+      <SocialProfileJsonLd
+        type="Person"
+        name="Charles Ouverleaux"
+        url="http://charlesouverleaux.com"
+        sameAs={[
+          "https://www.linkedin.com/in/charlesouverleaux/",
+          "https://github.com/CharlesOuverleaux",
+          "https://twitter.com/CO_IN_TECH",
+          "https://stackoverflow.com/users/16106763/charles-ouverleaux",
+        ]}
       />
       <Head>
         <link rel="icon" href="/favicon.ico" />
