@@ -1,11 +1,7 @@
 import { Job } from "../lib/types";
 
 const getNextJob = (jobId: string, jobArray: Job[]) => {
-  const jobIndex = jobArray
-    .map(function (e) {
-      return e.jobId;
-    })
-    .indexOf(jobId);
+  const jobIndex = jobArray.findIndex((item) => item.jobId === jobId);
   let newIndex;
   if (jobIndex === jobArray.length - 1) {
     newIndex = 0;

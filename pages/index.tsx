@@ -2,22 +2,26 @@ import type { NextPage, GetStaticProps } from "next";
 import Head from "next/head";
 import { CardList } from "../components";
 import { Page } from "../components/Page";
-import useApiData from "../hooks/use-api-data";
 import { Job } from "../lib/types";
 import { NextSeo, ProfilePageJsonLd } from "next-seo";
 import { PageProps } from "../lib/types";
+import { allJobs } from "../models/job";
 
 export const getStaticProps: GetStaticProps = async () => {
+  const jobs = await allJobs();
+
   return {
     props: {
       canonicalUrl: new URL("/", process.env.BASE_URL).href,
+      jobs,
     },
   };
 };
 
-const Home: NextPage<PageProps> = ({ canonicalUrl }) => {
-  const jobs = useApiData<Job[]>("api/jobs", []);
-
+const Home: NextPage<PageProps & { jobs: Job[] }> = ({
+  canonicalUrl,
+  jobs,
+}) => {
   return (
     <div>
       <NextSeo
