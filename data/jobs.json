@@ -17,8 +17,8 @@
       "imageAlt": "OneFootball Logo",
       "dates": "Feb. 2022 - Present",
       "featuredImages" : [
-        { "imageSrc": "/Hero.png", "imageAlt": "aera.onefootball.com" },
-        { "imageSrc": "/Players.png", "imageAlt": "Aera players" },
+        { "imageSrc": "/marketplace.png", "imageAlt": "aera.onefootball.com" },
+        { "imageSrc": "/OnefootballTeaser.png", "imageAlt": "onefootball Teaser" },
         { "imageSrc": "/OneFootball.svg", "imageAlt": "OneFootball Labs Office" }
       ],
       "links": {"siteLink": "https://aera.onefootball.com/"},
