@@ -1,7 +1,5 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { Job } from "../../lib/types";
-import { allJobs, findJobById } from "../../models/job";
-import { ParsedUrlQuery } from "querystring";
 import { Page } from "../../components/Page";
 import getPreviousJob from "../../helpers/getPreviousJob";
 import getNextJob from "../../helpers/getNextJob";

@@ -5,10 +5,13 @@ import { Page } from "../components/Page";
 import { Job } from "../lib/types";
 import { NextSeo, SocialProfileJsonLd } from "next-seo";
 import { PageProps } from "../lib/types";
-import { allJobs } from "../models/job";
+// import { allJobs } from "../models/job";
+import client from "../client";
+import { getAllJobs } from "../lib/sanity/queries";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const jobs = await allJobs();
+  const jobs = await client.fetch(getAllJobs);
+  // const jobs = await allJobs();
 
   return {
     props: {

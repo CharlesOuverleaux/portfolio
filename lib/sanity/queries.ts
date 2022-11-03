@@ -1,15 +1,22 @@
 import { groq } from "next-sanity";
 
-
-export const getAllJobs = groq`*[_type == 'job'] | order(_createdAt asc)`;
-export const getJob = groq`*[(_type == 'job') && (slug.current == $jobId)][0]{
-  ...,
+const sharedJobMetaData = `
   "imageSrc": mainImage.asset->url,
   "imageAlt": mainImage.alt,
   "featuredImages": featuredImages.images[]{
     "imageSrc": asset->url,
     "imageAlt": alt
-  },
+    },
+  `;
+
+
+export const getAllJobs = groq`*[_type == 'job'] | order(_createdAt asc) {
+  ...,
+  ${sharedJobMetaData}
+}`;
+export const getJob = groq`*[(_type == 'job') && (slug.current == $jobId)][0]{
+  ...,
+  ${sharedJobMetaData}
 }`;
 
 // Ref: https://www.sanity.io/blog/build-your-own-blog-with-sanity-and-next-js#c69ec037032f
