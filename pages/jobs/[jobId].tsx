@@ -1,4 +1,4 @@
-import { GetStaticProps, NextPage } from "next";
+import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { Job } from "../../lib/types";
 import { allJobs, findJobById } from "../../models/job";
 import { ParsedUrlQuery } from "querystring";
@@ -12,31 +12,21 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { JobButton, JobDetails } from "../../components/.";
+import client from "../../client";
+import { getJobsSlugs } from "../../lib/sanity/queries";
 
-// replace by get static path instead of server side props
-// https://nextjs.org/docs/basic-features/data-fetching/get-static-paths
-export const getStaticPaths = async () => {
+// Ref: https://nextjs.org/docs/basic-features/data-fetching/get-static-paths
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = await client.fetch(getJobsSlugs);
+
   return {
-    paths: [
-      { params: { jobId: "onefootball" } },
-      { params: { jobId: "surfeasy" } },
-      { params: { jobId: "rent-a-techy" } },
-      { params: { jobId: "amazon" } },
-      { params: { jobId: "nu3" } },
-      { params: { jobId: "home24" } },
-    ],
-    fallback: false,
+    paths: paths.map((jobId: string) => ({ params: { jobId } })),
+    fallback: true,
   };
-};
-
-interface Params extends ParsedUrlQuery {
-  jobId: string;
 }
 
-export const getStaticProps: GetStaticProps<Props, Params> = async ({
-  params,
-}) => {
-  const { jobId } = params!;
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const jobId = params!.jobId as string;
   const job = await findJobById(jobId);
 
   const jobs = await allJobs();
