@@ -1,7 +1,5 @@
-import { GetStaticProps, NextPage } from "next";
+import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { Job } from "../../lib/types";
-import { allJobs, findJobById } from "../../models/job";
-import { ParsedUrlQuery } from "querystring";
 import { Page } from "../../components/Page";
 import getPreviousJob from "../../helpers/getPreviousJob";
 import getNextJob from "../../helpers/getNextJob";
@@ -12,50 +10,41 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { JobButton, JobDetails } from "../../components/.";
+import client from "../../client";
+import { getAllJobs, getJob, getJobsSlugs } from "../../lib/sanity/queries";
 
-// replace by get static path instead of server side props
-// https://nextjs.org/docs/basic-features/data-fetching/get-static-paths
-export const getStaticPaths = async () => {
-  return {
-    paths: [
-      { params: { jobId: "onefootball" } },
-      { params: { jobId: "surfeasy" } },
-      { params: { jobId: "rent-a-techy" } },
-      { params: { jobId: "amazon" } },
-      { params: { jobId: "nu3" } },
-      { params: { jobId: "home24" } },
-    ],
-    fallback: false,
-  };
-};
-
-interface Params extends ParsedUrlQuery {
-  jobId: string;
-}
-
-export const getStaticProps: GetStaticProps<Props, Params> = async ({
-  params,
-}) => {
-  const { jobId } = params!;
-  const job = await findJobById(jobId);
-
-  const jobs = await allJobs();
-
-  return {
-    props: {
-      job,
-      jobs,
-    },
-  };
-};
-
-interface Props {
+interface JobPageProps {
   job: Job;
   jobs: Job[];
+  previousJob: Job[];
+  previousJobId: string;
+  nextJob: Job[];
+  nextJobId: string;
 }
 
-const JobPage: NextPage<Props> = ({ job, jobs }) => {
-  library.add(faYoutube, faGithub, faChrome);
+// Ref: https://nextjs.org/docs/basic-features/data-fetching/get-static-paths
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = await client.fetch(getJobsSlugs);
+
+  return {
+    paths: paths.map((jobId: string) => ({ params: { jobId } })),
+    fallback: true,
+  };
+}
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const jobId = params!.jobId ? params!.jobId.toString() : "onefootball";
+  // Sanity
+  const job: Job | null = await client.fetch(getJob, { jobId: jobId });
+  const jobs: Job[] = await client.fetch(getAllJobs);
+
+  if (!job) {
+    return {
+      props: {
+        job: null,
+      },
+    };
+  }
 
   const previousJobId = getPreviousJob(job.jobId, jobs);
   const nextJobId = getNextJob(job.jobId, jobs);
@@ -68,22 +57,44 @@ const JobPage: NextPage<Props> = ({ job, jobs }) => {
     return job.jobId == nextJobId;
   });
 
+  return {
+    props: {
+      job,
+      previousJob,
+      previousJobId,
+      nextJob,
+      nextJobId,
+    },
+  };
+};
+
+const JobPage: NextPage<JobPageProps> = ({
+  job = null,
+  previousJob,
+  previousJobId,
+  nextJob,
+  nextJobId,
+}) => {
+  library.add(faYoutube, faGithub, faChrome);
+
   return (
     <Page>
-      <div className="overflow-hidden bg-white">
-        <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <h1 className="hidden">
-            {job.company} {job.title}
-          </h1>
-          <JobDetails job={job} />
-          <JobButton
-            previousJob={previousJob}
-            previousJobId={previousJobId}
-            nextJob={nextJob}
-            nextJobId={nextJobId}
-          />
+      {job && (
+        <div className="overflow-hidden bg-white">
+          <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <h1 className="hidden">
+              {job.company} {job.title}
+            </h1>
+            <JobDetails job={job} />
+            <JobButton
+              previousJob={previousJob}
+              previousJobId={previousJobId}
+              nextJob={nextJob}
+              nextJobId={nextJobId}
+            />
+          </div>
         </div>
-      </div>
+      )}
     </Page>
   );
 };

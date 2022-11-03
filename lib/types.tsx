@@ -1,3 +1,9 @@
+import type {
+  PortableTextBlock,
+  PortableTextSpan,
+  PortableTextLink,
+} from "@portabletext/types";
+
 export interface CardProps {
   job: Job;
 }
@@ -8,7 +14,8 @@ export type Job = {
   companyDescription: string;
   techStack: string[];
   title: string;
-  jobDescription: string[];
+  // Ref: https://github.com/portabletext/types
+  jobDescription: PortableTextBlock | PortableTextSpan | PortableTextLink;
   multipleJobs: { title: string; descriptions: string[] }[];
   imageSrc: string;
   imageAlt: string;
