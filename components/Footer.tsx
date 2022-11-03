@@ -71,6 +71,8 @@ export const Footer: FC = () => {
         </div>
         <p className="mt-8 text-base text-center text-gray-400">
           &copy; Copyright 2022 Charles Ouverleaux. All rights reserved.
+          <br />
+          This site was built using React, Nextjs and Sanity (CMS).
         </p>
       </div>
     </footer>
