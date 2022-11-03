@@ -5,13 +5,20 @@ import { Page } from "../components/Page";
 import { Job } from "../lib/types";
 import { NextSeo, SocialProfileJsonLd } from "next-seo";
 import { PageProps } from "../lib/types";
-// import { allJobs } from "../models/job";
 import client from "../client";
 import { getAllJobs } from "../lib/sanity/queries";
 
 export const getStaticProps: GetStaticProps = async () => {
   const jobs = await client.fetch(getAllJobs);
-  // const jobs = await allJobs();
+
+  if (!jobs) {
+    return {
+      props: {
+        canonicalUrl: new URL("/", process.env.BASE_URL).href,
+        jobs: null,
+      },
+    };
+  }
 
   return {
     props: {
@@ -21,7 +28,7 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-const Home: NextPage<PageProps & { jobs: Job[] }> = ({
+const Home: NextPage<PageProps & { jobs: Job[]}> = ({
   canonicalUrl,
   jobs,
 }) => {
