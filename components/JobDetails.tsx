@@ -3,32 +3,11 @@ import { Job } from "../lib/types";
 import { SvgPattern } from "./.";
 import { IconsBar } from "./IconsBar";
 import { Slider } from "./index";
+import { PortableText } from "@portabletext/react";
 
 interface JobDetailsProps {
   job: Job;
 }
-interface MultipleJobsProps {
-  multipleJobs: { title: string; descriptions: string[] }[];
-}
-
-const MultipleJobs: FC<MultipleJobsProps> = ({ multipleJobs }) => {
-  return (
-    <>
-      {multipleJobs.map((content) => (
-        <li key={content.title}>
-          {content.title}
-          {
-            <ul>
-              {content.descriptions.map((description, i) => (
-                <li key={i}>{description}</li>
-              ))}
-            </ul>
-          }
-        </li>
-      ))}
-    </>
-  );
-};
 
 export const JobDetails: FC<JobDetailsProps> = ({ job }) => {
   return (
@@ -62,25 +41,13 @@ export const JobDetails: FC<JobDetailsProps> = ({ job }) => {
                 <h3>Tech Stack</h3>
                 <div className="grid grid-cols-2 p-0 sm:grid-cols-3">
                   {job.techStack.map((tech) => (
-                    <span key={tech} className="">
-                      {tech}
-                    </span>
+                    <span key={tech}>{tech}</span>
                   ))}
                 </div>
               </>
             )}
             <h3>Work | {job.dates} </h3>
-            <ul role="list" className="list-square">
-              {job.multipleJobs ? (
-                <MultipleJobs multipleJobs={job.multipleJobs} />
-              ) : (
-                job.jobDescription.map((item) => (
-                  <li key={item} className="pl-0">
-                    {item}
-                  </li>
-                ))
-              )}
-            </ul>
+            <PortableText value={job.jobDescription} />
             <IconsBar links={job.links} />
           </div>
         </div>

@@ -1,7 +1,10 @@
+import { FaJedi } from "react-icons/fa";
+
 export default {
   name: "job",
   title: "Jobs",
   type: "document",
+  icon: FaJedi,
   fields: [
     {
       name: "title",
@@ -87,7 +90,7 @@ export default {
     select: {
       title: "title",
       company: "company",
-      dates: "dates"
+      dates: "dates",
     },
     prepare(selection) {
       const { title, company, dates } = selection;

@@ -16,6 +16,8 @@
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.5",
+    "@portabletext/react": "^1.0.6",
+    "@portabletext/types": "^2.0.0",
     "@sanity/client": "^3.4.1",
     "axios": "^0.26.1",
     "clsx": "^1.1.1",
@@ -25,6 +27,7 @@
     "react": "^17.0.2",
     "react-3d-hover": "^1.1.1",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.6.0",
     "react-lottie-player": "^1.4.3"
   },
   "devDependencies": {

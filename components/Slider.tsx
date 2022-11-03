@@ -34,6 +34,8 @@ export const Slider: FC<SliderProps> = ({ featuredImages }) => {
             alt={featuredImages[currentIndex].imageAlt}
             layout="fill"
             objectFit="cover"
+            // Ref: https://stackoverflow.com/questions/73386743/nextjs-image-was-preloaded-using-link-preload-but-not-used-within-a-few-seconds
+            priority={true}
           />
         </div>
         <div className="absolute bottom-0 flex items-center justify-center w-full px-3 text-white transform -translate-y-1/2">

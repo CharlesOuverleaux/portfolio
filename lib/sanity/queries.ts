@@ -1,8 +1,16 @@
 import { groq } from "next-sanity";
 
 
-// TODO Add slug && (slug.current == $slug)
-export const getJob = groq`*[(_type == 'job')][0];`;
+export const getAllJobs = groq`*[_type == 'job'] | order(_createdAt asc)`;
+export const getJob = groq`*[(_type == 'job') && (slug.current == $jobId)][0]{
+  ...,
+  "imageSrc": mainImage.asset->url,
+  "imageAlt": mainImage.alt,
+  "featuredImages": featuredImages.images[]{
+    "imageSrc": asset->url,
+    "imageAlt": alt
+  },
+}`;
 
 // Ref: https://www.sanity.io/blog/build-your-own-blog-with-sanity-and-next-js#c69ec037032f
 // Used for getStaticPaths

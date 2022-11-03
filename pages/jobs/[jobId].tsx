@@ -13,7 +13,12 @@ import {
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { JobButton, JobDetails } from "../../components/.";
 import client from "../../client";
-import { getJobsSlugs } from "../../lib/sanity/queries";
+import { getAllJobs, getJob, getJobsSlugs } from "../../lib/sanity/queries";
+
+interface JobPageProps {
+  job: Job;
+  jobs: Job[];
+}
 
 // Ref: https://nextjs.org/docs/basic-features/data-fetching/get-static-paths
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -27,9 +32,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const jobId = params!.jobId as string;
-  const job = await findJobById(jobId);
-
-  const jobs = await allJobs();
+  // Sanity
+  const job = await client.fetch(getJob, {jobId: jobId});
+  const jobs = await client.fetch(getAllJobs);
 
   return {
     props: {
@@ -39,12 +44,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 };
 
-interface Props {
-  job: Job;
-  jobs: Job[];
-}
-
-const JobPage: NextPage<Props> = ({ job, jobs }) => {
+const JobPage: NextPage<JobPageProps> = ({ job, jobs }) => {
   library.add(faYoutube, faGithub, faChrome);
 
   const previousJobId = getPreviousJob(job.jobId, jobs);
