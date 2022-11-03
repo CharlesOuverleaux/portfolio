@@ -40,3 +40,8 @@ yarn-error.log*
 # next-sitemap
 /public/robots.txt
 /public/sitemap*.xml
+
+# Sanity has its own nodemodules
+/studio/node_modules
+/studio/dist
+studio/yarn.lock
