@@ -25,10 +25,12 @@ export const getStaticProps: GetStaticProps = async () => {
       canonicalUrl: new URL("/", process.env.BASE_URL).href,
       jobs,
     },
+    // Ref: https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration
+    revalidate: 10, // In seconds
   };
 };
 
-const Home: NextPage<PageProps & { jobs: Job[]}> = ({
+const Home: NextPage<PageProps & { jobs: Job[] }> = ({
   canonicalUrl,
   jobs,
 }) => {
