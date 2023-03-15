@@ -1,6 +1,10 @@
 import { FC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconName } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faChrome,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
 interface IconsBarProps {
@@ -20,10 +24,10 @@ export const IconsBar: FC<IconsBarProps> = ({ links }) => {
             key="Chrome"
             target="_blank"
             rel="noreferrer"
-            className="mx-5 text-gray-500 hover:text-black"
+            className="mx-5 text-gray-500 h-7 w-7 hover:text-black"
           >
             <span className="sr-only">Chrome</span>
-            <FontAwesomeIcon icon={["fab", "chrome" as IconName]} size={"2x"} />
+            <FontAwesomeIcon icon={faChrome} />
           </a>
         </Link>
       )}
@@ -33,10 +37,10 @@ export const IconsBar: FC<IconsBarProps> = ({ links }) => {
             key="GitHub"
             target="_blank"
             rel="noreferrer"
-            className="mx-5 text-gray-500 hover:text-black"
+            className="mx-5 text-gray-500 h-7 w-7 hover:text-black"
           >
             <span className="sr-only">GitHub</span>
-            <FontAwesomeIcon icon={["fab", "github" as IconName]} size={"2x"} />
+            <FontAwesomeIcon icon={faGithub} />
           </a>
         </Link>
       )}
@@ -46,13 +50,10 @@ export const IconsBar: FC<IconsBarProps> = ({ links }) => {
             key="Youtube"
             target="_blank"
             rel="noreferrer"
-            className="mx-5 text-gray-500 hover:text-black"
+            className="mx-5 text-gray-500 h-7 w-7 hover:text-black"
           >
             <span className="sr-only">Youtube</span>
-            <FontAwesomeIcon
-              icon={["fab", "youtube" as IconName]}
-              size={"2x"}
-            />
+            <FontAwesomeIcon icon={faYoutube} />
           </a>
         </Link>
       )}
