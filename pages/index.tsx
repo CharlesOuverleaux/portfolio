@@ -28,7 +28,7 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-const Home: NextPage<PageProps & { jobs: Job[]}> = ({
+const Home: NextPage<PageProps & { jobs: Job[] }> = ({
   canonicalUrl,
   jobs,
 }) => {
