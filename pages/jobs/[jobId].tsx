@@ -30,7 +30,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     paths: paths.map((jobId: string) => ({ params: { jobId } })),
     fallback: true,
   };
-}
+};
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const jobId = params!.jobId ? params!.jobId.toString() : "onefootball";
@@ -65,6 +65,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       nextJob,
       nextJobId,
     },
+    // Ref: https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration
+    revalidate: 10, // In seconds
   };
 };
 
