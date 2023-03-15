@@ -14,17 +14,19 @@ interface IconsBarProps {
 export const IconsBar: FC<IconsBarProps> = ({ links }) => {
   return (
     <div className="flex justify-center w-full py-4 sm:justify-start">
-      <Link href={links.siteLink}>
-        <a
-          key="Chrome"
-          target="_blank"
-          rel="noreferrer"
-          className="mx-5 text-gray-500 hover:text-black"
-        >
-          <span className="sr-only">Chrome</span>
-          <FontAwesomeIcon icon={["fab", "chrome" as IconName]} size={"2x"} />
-        </a>
-      </Link>
+      {links.siteLink && (
+        <Link href={links.siteLink}>
+          <a
+            key="Chrome"
+            target="_blank"
+            rel="noreferrer"
+            className="mx-5 text-gray-500 hover:text-black"
+          >
+            <span className="sr-only">Chrome</span>
+            <FontAwesomeIcon icon={["fab", "chrome" as IconName]} size={"2x"} />
+          </a>
+        </Link>
+      )}
       {links.githubLink && (
         <Link href={links.githubLink}>
           <a
