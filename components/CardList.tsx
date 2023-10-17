@@ -18,8 +18,11 @@ export const CardList: FC<CardListProps> = ({ jobs }) => {
         </h2>
 
         <div className="grid grid-cols-1 mt-6 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-          {jobs.map((job) => (
-            <Card key={job.jobId} job={job} />
+          {jobs
+            .slice()
+            .sort((a, b) => a.gridOrder - b.gridOrder)
+            .map((job) => (
+              <Card key={job.jobId} job={job} />
           ))}
         </div>
       </div>

@@ -23,6 +23,7 @@ export type Job = {
   featuredImages: { imageSrc: string; imageAlt: string }[];
   links: { siteLink: string; githubLink: string; youtubeLink: string };
   isTechnicalJob: boolean;
+  gridOrder: number;
 };
 
 export type PageProps = {

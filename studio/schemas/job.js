@@ -26,6 +26,11 @@ export default {
       type: "string",
     },
     {
+      name: "gridOrder",
+      title: "gridOrder",
+      type: "number",
+    },
+    {
       name: "company",
       title: "Company",
       type: "string",
